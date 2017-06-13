@@ -269,9 +269,9 @@
 		604073811EEFDD6D00815DFC /* R---3 */ = {
 			isa = PBXGroup;
 			children = (
-				604073BE1EEFDF3100815DFC /* RAC学习 */,
 				604073891EEFDD9000815DFC /* ThirdViewController.h */,
 				6040738A1EEFDD9000815DFC /* ThirdViewController.m */,
+				604073BE1EEFDF3100815DFC /* RAC学习 */,
 			);
 			path = "R---3";
 			sourceTree = "<group>";
