@@ -36,6 +36,11 @@
 		604073B81EEFDE6500815DFC /* biaozhixunhuanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073B71EEFDE6500815DFC /* biaozhixunhuanViewController.m */; };
 		604073BC1EEFDE8D00815DFC /* testimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 604073BA1EEFDE8D00815DFC /* testimage.jpg */; };
 		604073BD1EEFDE8D00815DFC /* 凉凉.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 604073BB1EEFDE8D00815DFC /* 凉凉.mp4 */; };
+		604073C41EEFE0BD00815DFC /* RACSignalHandleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073C31EEFE0BD00815DFC /* RACSignalHandleViewController.m */; };
+		604073C91EEFE0C900815DFC /* dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073C61EEFE0C900815DFC /* dog.m */; };
+		604073CA1EEFE0C900815DFC /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073C81EEFE0C900815DFC /* LoginViewModel.m */; };
+		604073CF1EEFE0D400815DFC /* RAClearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073CC1EEFE0D400815DFC /* RAClearnViewController.m */; };
+		604073D01EEFE0D400815DFC /* RACAndMVVMlearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073CE1EEFE0D400815DFC /* RACAndMVVMlearnViewController.m */; };
 		D3D897EA8D77F77D2326912C /* libPods-selfLearnProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E924996B0806E51B01591F /* libPods-selfLearnProject.a */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +120,16 @@
 		604073B71EEFDE6500815DFC /* biaozhixunhuanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = biaozhixunhuanViewController.m; sourceTree = "<group>"; };
 		604073BA1EEFDE8D00815DFC /* testimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testimage.jpg; sourceTree = "<group>"; };
 		604073BB1EEFDE8D00815DFC /* 凉凉.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "凉凉.mp4"; sourceTree = "<group>"; };
+		604073C21EEFE0BD00815DFC /* RACSignalHandleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACSignalHandleViewController.h; sourceTree = "<group>"; };
+		604073C31EEFE0BD00815DFC /* RACSignalHandleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSignalHandleViewController.m; sourceTree = "<group>"; };
+		604073C51EEFE0C900815DFC /* dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dog.h; sourceTree = "<group>"; };
+		604073C61EEFE0C900815DFC /* dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dog.m; sourceTree = "<group>"; };
+		604073C71EEFE0C900815DFC /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		604073C81EEFE0C900815DFC /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		604073CB1EEFE0D400815DFC /* RAClearnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAClearnViewController.h; sourceTree = "<group>"; };
+		604073CC1EEFE0D400815DFC /* RAClearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAClearnViewController.m; sourceTree = "<group>"; };
+		604073CD1EEFE0D400815DFC /* RACAndMVVMlearnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACAndMVVMlearnViewController.h; sourceTree = "<group>"; };
+		604073CE1EEFE0D400815DFC /* RACAndMVVMlearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACAndMVVMlearnViewController.m; sourceTree = "<group>"; };
 		7DB64691A841809C2A1379F1 /* Pods-selfLearnProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-selfLearnProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-selfLearnProject/Pods-selfLearnProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -358,6 +373,10 @@
 		604073BF1EEFDF3C00815DFC /* 基础 */ = {
 			isa = PBXGroup;
 			children = (
+				604073CB1EEFE0D400815DFC /* RAClearnViewController.h */,
+				604073CC1EEFE0D400815DFC /* RAClearnViewController.m */,
+				604073CD1EEFE0D400815DFC /* RACAndMVVMlearnViewController.h */,
+				604073CE1EEFE0D400815DFC /* RACAndMVVMlearnViewController.m */,
 			);
 			path = "基础";
 			sourceTree = "<group>";
@@ -365,6 +384,10 @@
 		604073C01EEFDF4600815DFC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				604073C51EEFE0C900815DFC /* dog.h */,
+				604073C61EEFE0C900815DFC /* dog.m */,
+				604073C71EEFE0C900815DFC /* LoginViewModel.h */,
+				604073C81EEFE0C900815DFC /* LoginViewModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -372,6 +395,8 @@
 		604073C11EEFDF5000815DFC /* 信号处理 */ = {
 			isa = PBXGroup;
 			children = (
+				604073C21EEFE0BD00815DFC /* RACSignalHandleViewController.h */,
+				604073C31EEFE0BD00815DFC /* RACSignalHandleViewController.m */,
 			);
 			path = "信号处理";
 			sourceTree = "<group>";
@@ -588,16 +613,21 @@
 				604073B51EEFDE5B00815DFC /* CAGradientLearnViewController.m in Sources */,
 				604073961EEFDDD800815DFC /* Person.m in Sources */,
 				6040738B1EEFDD9000815DFC /* ThirdViewController.m in Sources */,
+				604073CA1EEFE0C900815DFC /* LoginViewModel.m in Sources */,
 				604073951EEFDDD800815DFC /* RuntimetestViewController.m in Sources */,
 				604073771EEFDC8900815DFC /* backViewController.m in Sources */,
 				604073B21EEFDE5100815DFC /* AVLearn2ViewController.m in Sources */,
 				604073A11EEFDDEA00815DFC /* runlooponeViewController.m in Sources */,
 				604073AC1EEFDE4500815DFC /* socketlearnserviceViewController.m in Sources */,
 				604073881EEFDD8A00815DFC /* SecondViewController.m in Sources */,
+				604073CF1EEFE0D400815DFC /* RAClearnViewController.m in Sources */,
 				604073B81EEFDE6500815DFC /* biaozhixunhuanViewController.m in Sources */,
 				604073B11EEFDE5100815DFC /* AVFoudationlearnViewController.m in Sources */,
 				604073A01EEFDDEA00815DFC /* GCDtimerViewController.m in Sources */,
+				604073C41EEFE0BD00815DFC /* RACSignalHandleViewController.m in Sources */,
+				604073C91EEFE0C900815DFC /* dog.m in Sources */,
 				604073791EEFDC8900815DFC /* ROOTViewController.m in Sources */,
+				604073D01EEFE0D400815DFC /* RACAndMVVMlearnViewController.m in Sources */,
 				6040738E1EEFDD9600815DFC /* FourthViewController.m in Sources */,
 				604073781EEFDC8900815DFC /* myTableViewController.m in Sources */,
 				6040737A1EEFDC8900815DFC /* AppDelegate.m in Sources */,
