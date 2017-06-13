@@ -18,6 +18,24 @@
 		6040737B1EEFDC8900815DFC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 604073741EEFDC8900815DFC /* Default-568h@2x.png */; };
 		6040737C1EEFDC8900815DFC /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 604073751EEFDC8900815DFC /* Default-667h@2x.png */; };
 		6040737D1EEFDC8900815DFC /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 604073761EEFDC8900815DFC /* Default-736h@3x.png */; };
+		604073851EEFDD8100815DFC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073841EEFDD8100815DFC /* FirstViewController.m */; };
+		604073881EEFDD8A00815DFC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073871EEFDD8A00815DFC /* SecondViewController.m */; };
+		6040738B1EEFDD9000815DFC /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6040738A1EEFDD9000815DFC /* ThirdViewController.m */; };
+		6040738E1EEFDD9600815DFC /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6040738D1EEFDD9600815DFC /* FourthViewController.m */; };
+		604073951EEFDDD800815DFC /* RuntimetestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073921EEFDDD800815DFC /* RuntimetestViewController.m */; };
+		604073961EEFDDD800815DFC /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073941EEFDDD800815DFC /* Person.m */; };
+		6040739F1EEFDDE900815DFC /* imageCellTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073981EEFDDE900815DFC /* imageCellTestViewController.m */; };
+		604073A01EEFDDEA00815DFC /* GCDtimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6040739A1EEFDDE900815DFC /* GCDtimerViewController.m */; };
+		604073A11EEFDDEA00815DFC /* runlooponeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6040739C1EEFDDE900815DFC /* runlooponeViewController.m */; };
+		604073A21EEFDDEA00815DFC /* runlooptwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6040739E1EEFDDE900815DFC /* runlooptwoViewController.m */; };
+		604073AB1EEFDE4500815DFC /* socketlearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073A81EEFDE4500815DFC /* socketlearnViewController.m */; };
+		604073AC1EEFDE4500815DFC /* socketlearnserviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073AA1EEFDE4500815DFC /* socketlearnserviceViewController.m */; };
+		604073B11EEFDE5100815DFC /* AVFoudationlearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073AE1EEFDE5100815DFC /* AVFoudationlearnViewController.m */; };
+		604073B21EEFDE5100815DFC /* AVLearn2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073B01EEFDE5100815DFC /* AVLearn2ViewController.m */; };
+		604073B51EEFDE5B00815DFC /* CAGradientLearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073B41EEFDE5B00815DFC /* CAGradientLearnViewController.m */; };
+		604073B81EEFDE6500815DFC /* biaozhixunhuanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073B71EEFDE6500815DFC /* biaozhixunhuanViewController.m */; };
+		604073BC1EEFDE8D00815DFC /* testimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 604073BA1EEFDE8D00815DFC /* testimage.jpg */; };
+		604073BD1EEFDE8D00815DFC /* 凉凉.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 604073BB1EEFDE8D00815DFC /* 凉凉.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +58,8 @@
 /* Begin PBXFileReference section */
 		604073351EEFDBAA00815DFC /* selfLearnProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = selfLearnProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		604073391EEFDBAA00815DFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		604073441EEFDBAA00815DFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
-		604073491EEFDBAA00815DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		604073441EEFDBAA00815DFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		604073491EEFDBAA00815DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6040734E1EEFDBAB00815DFC /* selfLearnProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = selfLearnProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		604073521EEFDBAB00815DFC /* selfLearnProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = selfLearnProjectTests.m; sourceTree = "<group>"; };
 		604073541EEFDBAB00815DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,9 +74,44 @@
 		604073711EEFDC8900815DFC /* ROOTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ROOTViewController.m; sourceTree = "<group>"; };
 		604073721EEFDC8900815DFC /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		604073731EEFDC8900815DFC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		604073741EEFDC8900815DFC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		604073751EEFDC8900815DFC /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
-		604073761EEFDC8900815DFC /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		604073741EEFDC8900815DFC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Main/Default-568h@2x.png"; sourceTree = "<group>"; };
+		604073751EEFDC8900815DFC /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-667h@2x.png"; path = "Main/Default-667h@2x.png"; sourceTree = "<group>"; };
+		604073761EEFDC8900815DFC /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-736h@3x.png"; path = "Main/Default-736h@3x.png"; sourceTree = "<group>"; };
+		6040737E1EEFDCD100815DFC /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		604073831EEFDD8100815DFC /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		604073841EEFDD8100815DFC /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		604073861EEFDD8A00815DFC /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		604073871EEFDD8A00815DFC /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		604073891EEFDD9000815DFC /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		6040738A1EEFDD9000815DFC /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		6040738C1EEFDD9600815DFC /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		6040738D1EEFDD9600815DFC /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		604073911EEFDDD800815DFC /* RuntimetestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuntimetestViewController.h; sourceTree = "<group>"; };
+		604073921EEFDDD800815DFC /* RuntimetestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuntimetestViewController.m; sourceTree = "<group>"; };
+		604073931EEFDDD800815DFC /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		604073941EEFDDD800815DFC /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		604073971EEFDDE900815DFC /* imageCellTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageCellTestViewController.h; sourceTree = "<group>"; };
+		604073981EEFDDE900815DFC /* imageCellTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageCellTestViewController.m; sourceTree = "<group>"; };
+		604073991EEFDDE900815DFC /* GCDtimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDtimerViewController.h; sourceTree = "<group>"; };
+		6040739A1EEFDDE900815DFC /* GCDtimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDtimerViewController.m; sourceTree = "<group>"; };
+		6040739B1EEFDDE900815DFC /* runlooponeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = runlooponeViewController.h; sourceTree = "<group>"; };
+		6040739C1EEFDDE900815DFC /* runlooponeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = runlooponeViewController.m; sourceTree = "<group>"; };
+		6040739D1EEFDDE900815DFC /* runlooptwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = runlooptwoViewController.h; sourceTree = "<group>"; };
+		6040739E1EEFDDE900815DFC /* runlooptwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = runlooptwoViewController.m; sourceTree = "<group>"; };
+		604073A71EEFDE4500815DFC /* socketlearnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socketlearnViewController.h; sourceTree = "<group>"; };
+		604073A81EEFDE4500815DFC /* socketlearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = socketlearnViewController.m; sourceTree = "<group>"; };
+		604073A91EEFDE4500815DFC /* socketlearnserviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socketlearnserviceViewController.h; sourceTree = "<group>"; };
+		604073AA1EEFDE4500815DFC /* socketlearnserviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = socketlearnserviceViewController.m; sourceTree = "<group>"; };
+		604073AD1EEFDE5100815DFC /* AVFoudationlearnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVFoudationlearnViewController.h; sourceTree = "<group>"; };
+		604073AE1EEFDE5100815DFC /* AVFoudationlearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVFoudationlearnViewController.m; sourceTree = "<group>"; };
+		604073AF1EEFDE5100815DFC /* AVLearn2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVLearn2ViewController.h; sourceTree = "<group>"; };
+		604073B01EEFDE5100815DFC /* AVLearn2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVLearn2ViewController.m; sourceTree = "<group>"; };
+		604073B31EEFDE5B00815DFC /* CAGradientLearnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAGradientLearnViewController.h; sourceTree = "<group>"; };
+		604073B41EEFDE5B00815DFC /* CAGradientLearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAGradientLearnViewController.m; sourceTree = "<group>"; };
+		604073B61EEFDE6500815DFC /* biaozhixunhuanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = biaozhixunhuanViewController.h; sourceTree = "<group>"; };
+		604073B71EEFDE6500815DFC /* biaozhixunhuanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = biaozhixunhuanViewController.m; sourceTree = "<group>"; };
+		604073BA1EEFDE8D00815DFC /* testimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testimage.jpg; sourceTree = "<group>"; };
+		604073BB1EEFDE8D00815DFC /* 凉凉.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "凉凉.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +162,11 @@
 		604073371EEFDBAA00815DFC /* selfLearnProject */ = {
 			isa = PBXGroup;
 			children = (
+				604073B91EEFDE8000815DFC /* 素材 */,
+				604073821EEFDD7600815DFC /* R---4 */,
+				604073811EEFDD6D00815DFC /* R---3 */,
+				604073801EEFDD6300815DFC /* R---2 */,
+				6040737F1EEFDD5600815DFC /* R---1 */,
 				6040736B1EEFDC7F00815DFC /* Main */,
 				604073381EEFDBAA00815DFC /* Supporting Files */,
 			);
@@ -118,7 +176,13 @@
 		604073381EEFDBAA00815DFC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				604073491EEFDBAA00815DFC /* Info.plist */,
+				604073741EEFDC8900815DFC /* Default-568h@2x.png */,
+				604073751EEFDC8900815DFC /* Default-667h@2x.png */,
+				604073761EEFDC8900815DFC /* Default-736h@3x.png */,
+				604073441EEFDBAA00815DFC /* Assets.xcassets */,
 				604073391EEFDBAA00815DFC /* main.m */,
+				6040737E1EEFDCD100815DFC /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -152,13 +216,125 @@
 				604073711EEFDC8900815DFC /* ROOTViewController.m */,
 				604073721EEFDC8900815DFC /* AppDelegate.h */,
 				604073731EEFDC8900815DFC /* AppDelegate.m */,
-				604073741EEFDC8900815DFC /* Default-568h@2x.png */,
-				604073751EEFDC8900815DFC /* Default-667h@2x.png */,
-				604073761EEFDC8900815DFC /* Default-736h@3x.png */,
-				604073441EEFDBAA00815DFC /* Assets.xcassets */,
-				604073491EEFDBAA00815DFC /* Info.plist */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		6040737F1EEFDD5600815DFC /* R---1 */ = {
+			isa = PBXGroup;
+			children = (
+				604073901EEFDDCA00815DFC /* RunLoop学习 */,
+				6040738F1EEFDDB400815DFC /* Runtime学习 */,
+				604073831EEFDD8100815DFC /* FirstViewController.h */,
+				604073841EEFDD8100815DFC /* FirstViewController.m */,
+			);
+			path = "R---1";
+			sourceTree = "<group>";
+		};
+		604073801EEFDD6300815DFC /* R---2 */ = {
+			isa = PBXGroup;
+			children = (
+				604073A61EEFDE3B00815DFC /* 自动化测试理论循环 */,
+				604073A51EEFDE2900815DFC /* 渐变图层应用 */,
+				604073A41EEFDE1400815DFC /* AVFoundtion学习 */,
+				604073A31EEFDE0000815DFC /* Socket学习 */,
+				604073861EEFDD8A00815DFC /* SecondViewController.h */,
+				604073871EEFDD8A00815DFC /* SecondViewController.m */,
+			);
+			path = "R---2";
+			sourceTree = "<group>";
+		};
+		604073811EEFDD6D00815DFC /* R---3 */ = {
+			isa = PBXGroup;
+			children = (
+				604073891EEFDD9000815DFC /* ThirdViewController.h */,
+				6040738A1EEFDD9000815DFC /* ThirdViewController.m */,
+			);
+			path = "R---3";
+			sourceTree = "<group>";
+		};
+		604073821EEFDD7600815DFC /* R---4 */ = {
+			isa = PBXGroup;
+			children = (
+				6040738C1EEFDD9600815DFC /* FourthViewController.h */,
+				6040738D1EEFDD9600815DFC /* FourthViewController.m */,
+			);
+			path = "R---4";
+			sourceTree = "<group>";
+		};
+		6040738F1EEFDDB400815DFC /* Runtime学习 */ = {
+			isa = PBXGroup;
+			children = (
+				604073911EEFDDD800815DFC /* RuntimetestViewController.h */,
+				604073921EEFDDD800815DFC /* RuntimetestViewController.m */,
+				604073931EEFDDD800815DFC /* Person.h */,
+				604073941EEFDDD800815DFC /* Person.m */,
+			);
+			path = "Runtime学习";
+			sourceTree = "<group>";
+		};
+		604073901EEFDDCA00815DFC /* RunLoop学习 */ = {
+			isa = PBXGroup;
+			children = (
+				604073971EEFDDE900815DFC /* imageCellTestViewController.h */,
+				604073981EEFDDE900815DFC /* imageCellTestViewController.m */,
+				604073991EEFDDE900815DFC /* GCDtimerViewController.h */,
+				6040739A1EEFDDE900815DFC /* GCDtimerViewController.m */,
+				6040739B1EEFDDE900815DFC /* runlooponeViewController.h */,
+				6040739C1EEFDDE900815DFC /* runlooponeViewController.m */,
+				6040739D1EEFDDE900815DFC /* runlooptwoViewController.h */,
+				6040739E1EEFDDE900815DFC /* runlooptwoViewController.m */,
+			);
+			path = "RunLoop学习";
+			sourceTree = "<group>";
+		};
+		604073A31EEFDE0000815DFC /* Socket学习 */ = {
+			isa = PBXGroup;
+			children = (
+				604073A71EEFDE4500815DFC /* socketlearnViewController.h */,
+				604073A81EEFDE4500815DFC /* socketlearnViewController.m */,
+				604073A91EEFDE4500815DFC /* socketlearnserviceViewController.h */,
+				604073AA1EEFDE4500815DFC /* socketlearnserviceViewController.m */,
+			);
+			path = "Socket学习";
+			sourceTree = "<group>";
+		};
+		604073A41EEFDE1400815DFC /* AVFoundtion学习 */ = {
+			isa = PBXGroup;
+			children = (
+				604073AD1EEFDE5100815DFC /* AVFoudationlearnViewController.h */,
+				604073AE1EEFDE5100815DFC /* AVFoudationlearnViewController.m */,
+				604073AF1EEFDE5100815DFC /* AVLearn2ViewController.h */,
+				604073B01EEFDE5100815DFC /* AVLearn2ViewController.m */,
+			);
+			path = "AVFoundtion学习";
+			sourceTree = "<group>";
+		};
+		604073A51EEFDE2900815DFC /* 渐变图层应用 */ = {
+			isa = PBXGroup;
+			children = (
+				604073B31EEFDE5B00815DFC /* CAGradientLearnViewController.h */,
+				604073B41EEFDE5B00815DFC /* CAGradientLearnViewController.m */,
+			);
+			path = "渐变图层应用";
+			sourceTree = "<group>";
+		};
+		604073A61EEFDE3B00815DFC /* 自动化测试理论循环 */ = {
+			isa = PBXGroup;
+			children = (
+				604073B61EEFDE6500815DFC /* biaozhixunhuanViewController.h */,
+				604073B71EEFDE6500815DFC /* biaozhixunhuanViewController.m */,
+			);
+			path = "自动化测试理论循环";
+			sourceTree = "<group>";
+		};
+		604073B91EEFDE8000815DFC /* 素材 */ = {
+			isa = PBXGroup;
+			children = (
+				604073BA1EEFDE8D00815DFC /* testimage.jpg */,
+				604073BB1EEFDE8D00815DFC /* 凉凉.mp4 */,
+			);
+			path = "素材";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +444,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				604073451EEFDBAA00815DFC /* Assets.xcassets in Resources */,
+				604073BD1EEFDE8D00815DFC /* 凉凉.mp4 in Resources */,
 				6040737C1EEFDC8900815DFC /* Default-667h@2x.png in Resources */,
 				6040737B1EEFDC8900815DFC /* Default-568h@2x.png in Resources */,
+				604073BC1EEFDE8D00815DFC /* testimage.jpg in Resources */,
 				6040737D1EEFDC8900815DFC /* Default-736h@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,9 +473,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				604073AB1EEFDE4500815DFC /* socketlearnViewController.m in Sources */,
+				604073A21EEFDDEA00815DFC /* runlooptwoViewController.m in Sources */,
 				6040733A1EEFDBAA00815DFC /* main.m in Sources */,
+				604073851EEFDD8100815DFC /* FirstViewController.m in Sources */,
+				6040739F1EEFDDE900815DFC /* imageCellTestViewController.m in Sources */,
+				604073B51EEFDE5B00815DFC /* CAGradientLearnViewController.m in Sources */,
+				604073961EEFDDD800815DFC /* Person.m in Sources */,
+				6040738B1EEFDD9000815DFC /* ThirdViewController.m in Sources */,
+				604073951EEFDDD800815DFC /* RuntimetestViewController.m in Sources */,
 				604073771EEFDC8900815DFC /* backViewController.m in Sources */,
+				604073B21EEFDE5100815DFC /* AVLearn2ViewController.m in Sources */,
+				604073A11EEFDDEA00815DFC /* runlooponeViewController.m in Sources */,
+				604073AC1EEFDE4500815DFC /* socketlearnserviceViewController.m in Sources */,
+				604073881EEFDD8A00815DFC /* SecondViewController.m in Sources */,
+				604073B81EEFDE6500815DFC /* biaozhixunhuanViewController.m in Sources */,
+				604073B11EEFDE5100815DFC /* AVFoudationlearnViewController.m in Sources */,
+				604073A01EEFDDEA00815DFC /* GCDtimerViewController.m in Sources */,
 				604073791EEFDC8900815DFC /* ROOTViewController.m in Sources */,
+				6040738E1EEFDD9600815DFC /* FourthViewController.m in Sources */,
 				604073781EEFDC8900815DFC /* myTableViewController.m in Sources */,
 				6040737A1EEFDC8900815DFC /* AppDelegate.m in Sources */,
 			);
@@ -365,6 +559,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/selfLearnProject/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -411,6 +607,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/selfLearnProject/PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
