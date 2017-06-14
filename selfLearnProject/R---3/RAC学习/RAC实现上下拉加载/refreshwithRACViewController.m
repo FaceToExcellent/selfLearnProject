@@ -23,10 +23,10 @@
     [self tableviewMaker];
     [self loadMoreData];
     
-    [[[RACObserve(self.tableView, contentOffset)map:^id _Nullable(id  _Nullable value) {
+    [[[[RACObserve(self.tableView, contentOffset)map:^id _Nullable(id  _Nullable value) {
         
         
-        NSLog(@"条件1::::%f",(self.tableView.contentOffset.y - (self.tableView.contentSize.height-VIEWHEIGHT)));
+      //  NSLog(@"条件1::::%f",(self.tableView.contentOffset.y - (self.tableView.contentSize.height-VIEWHEIGHT)));
     
         
         if (self.tableView.contentOffset.y<-50) {
@@ -34,7 +34,7 @@
             //NSLog(@"下拉 worked");
             return @"1";
         } else if(self.tableView.contentOffset.y>self.tableView.contentSize.height-VIEWHEIGHT+60){
-            //上啦 这里的 60 是为了上拉效果 
+            //上啦 这里的 60 是为了上拉效果
            // NSLog(@"上啦 worked");
             return @"2";
         }else
@@ -42,8 +42,8 @@
             return @"0";
         }
         
-    }]distinctUntilChanged]subscribeNext:^(id  _Nullable x) {
-       // NSLog(@"%@",x);
+    }]distinctUntilChanged]delay:0.5] subscribeNext:^(id  _Nullable x) {
+       // NSLog(@"%@",x); 这里的delay模拟加载时间 
         if ([x integerValue] == 1) {
             [_tableView reloadData];
             
