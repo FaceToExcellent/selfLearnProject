@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self Map_rac];
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self delay_rac];
 }
 
 -(void)signal{
@@ -56,7 +56,49 @@
     
 }
 
+-(void)Filter_rac{
+    
+    UITextField * field = [[UITextField alloc]initWithFrame:CGRectMake(30, 120, 200, 30)];
+    field.backgroundColor =[UIColor orangeColor];
+    [self.view addSubview:field];
+    
+    [[field.rac_textSignal filter:^BOOL(NSString * _Nullable value) {
+        return  [value length] > 4;
+    }]subscribeNext:^(NSString * _Nullable x) {
+        NSLog(@"x = %@",x);
+    }];
+    
+}
+-(void)take_rac{
+    /*take 2就是获取前两个信号，skip 2就是跳过前两个。repeat是重复发送信号。*/
+    /*相似的还有takeLast takeUntil takeWhileBlock skipWhileBlock skipUntilBlock repeatWhileBlock都可以根据字面意思来理解*/
+    [[[RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        
+        [subscriber sendNext:@"1"];
+        [subscriber sendNext:@"2"];
+        [subscriber sendNext:@"3"];
+        [subscriber sendNext:@"4"];
+        [subscriber sendNext:@"5"];
+        [subscriber sendCompleted];
 
+        return nil;
+    }]take:2]subscribeNext:^(id  _Nullable x) {
+        NSLog(@"%@", x);
+    }completed:^{
+        NSLog(@"completed");
+    }];
+}
+
+
+-(void)delay_rac{
+    [[[RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        [subscriber sendNext:@"delay"];
+        [subscriber sendCompleted];
+        return nil;
+    }]delay:2]subscribeNext:^(id  _Nullable x) {
+        NSLog(@"%@", x);
+    }];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
