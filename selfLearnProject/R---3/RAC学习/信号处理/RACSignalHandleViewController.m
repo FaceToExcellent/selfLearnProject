@@ -172,20 +172,70 @@
         return nil;
     }];
 }
--(void)flattenMap_rac{
-    
-   RAC(_loginbutton,enabled)= [RACSignal combineLatest:@[_field.rac_textSignal,_field2.rac_textSignal] reduce:^id _Nullable(NSString * name,NSString* pwd){
-    
-       return @(name.length&&pwd.length);
+
+-(void)loginlimit{
+    RAC(_loginbutton,enabled)= [RACSignal combineLatest:@[_field.rac_textSignal,_field2.rac_textSignal] reduce:^id _Nullable(NSString * name,NSString* pwd){
         
-   }];
+        return @(name.length&&pwd.length);
+        
+    }];
     @weakify(self);
     [[self.loginbutton rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
-      @strongify(self);
+        @strongify(self);
         [[self signalInButton]subscribeNext:^(id  _Nullable x) {
             NSLog(@"%@",x);
         }];
     }];
+
+}
+-(void)flattenMap_rac{
+ //map subject
+    
+    RACSubject * subject = [RACSubject subject];
+    RACSignal * bindsignal = [subject map:^id _Nullable(id  _Nullable value) {
+        //map 就是对元素进行重新加工得到一个新的值，然后再返回
+        //如果是数组的话，对数组里的每一个元素操作 类似swift里的map
+        return  [NSString stringWithFormat:@"YYYY%@", value];
+    }];
+    
+    [bindsignal subscribeNext:^(id  _Nullable x) {
+        NSLog(@"%@",x);
+    }];
+    
+    [subject sendNext:@"GG"];
+    
+ //flattenMap
+    /*类似于swift的flattenMap 对于数组内部的数组的成员解放出来，再组成一个新的内部不含数组的数组， 返回
+      此处是处理信号里的信号，信号当中包含信号，则拆解内部信号，做成新的内部不含有信号的信号，返回*/
+    
+    
+    RACSignal * signalinner = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        //发送文字
+        [subscriber sendNext:@"inner"];
+        [subscriber sendCompleted];
+        return nil;
+    }];
+    [signalinner subscribeNext:^(id  _Nullable x) {
+         NSLog(@"flattenMapinner-----%@", x);
+    }];
+    //外部信号，包裹内部信号
+   [[[ RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+       //发送信号
+       [subscriber sendNext:signalinner];
+       [subscriber sendCompleted];
+        return nil;
+   }]flattenMap:^__kindof RACSignal * _Nullable(id  _Nullable value) {
+       
+       value =[NSString stringWithFormat:@"zzzz%@", value];
+      return  [RACSignal return:value];
+   }]subscribeNext:^(id  _Nullable x) {
+       //此处 x 是一个信号
+       NSLog(@"flattenMap-----%@", x);
+   }];
+    /*执行顺序为： flattenMapinner-----inner
+                 flattenMap-----zzzz<RACDynamicSignal: 0x6000004279e0>
+     
+     */
 }
 
 - (void)didReceiveMemoryWarning {

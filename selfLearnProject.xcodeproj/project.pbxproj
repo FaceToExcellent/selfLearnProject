@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		603EF3C91EF119F1001353BD /* refreshwithRACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 603EF3C81EF119F1001353BD /* refreshwithRACViewController.m */; };
 		6040733A1EEFDBAA00815DFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073391EEFDBAA00815DFC /* main.m */; };
 		604073451EEFDBAA00815DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604073441EEFDBAA00815DFC /* Assets.xcassets */; };
 		604073531EEFDBAB00815DFC /* selfLearnProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073521EEFDBAB00815DFC /* selfLearnProjectTests.m */; };
@@ -64,6 +65,8 @@
 /* Begin PBXFileReference section */
 		35E924996B0806E51B01591F /* libPods-selfLearnProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-selfLearnProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A3B7CAE8E1973E99560CFD /* Pods-selfLearnProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-selfLearnProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-selfLearnProject/Pods-selfLearnProject.release.xcconfig"; sourceTree = "<group>"; };
+		603EF3C71EF119F1001353BD /* refreshwithRACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = refreshwithRACViewController.h; sourceTree = "<group>"; };
+		603EF3C81EF119F1001353BD /* refreshwithRACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = refreshwithRACViewController.m; sourceTree = "<group>"; };
 		604073351EEFDBAA00815DFC /* selfLearnProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = selfLearnProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		604073391EEFDBAA00815DFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		604073441EEFDBAA00815DFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -159,6 +162,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		603EF3C61EF119A0001353BD /* RAC实现上下拉加载 */ = {
+			isa = PBXGroup;
+			children = (
+				603EF3C71EF119F1001353BD /* refreshwithRACViewController.h */,
+				603EF3C81EF119F1001353BD /* refreshwithRACViewController.m */,
+			);
+			path = "RAC实现上下拉加载";
+			sourceTree = "<group>";
+		};
 		6040732C1EEFDBAA00815DFC = {
 			isa = PBXGroup;
 			children = (
@@ -363,6 +375,7 @@
 		604073BE1EEFDF3100815DFC /* RAC学习 */ = {
 			isa = PBXGroup;
 			children = (
+				603EF3C61EF119A0001353BD /* RAC实现上下拉加载 */,
 				604073C11EEFDF5000815DFC /* 信号处理 */,
 				604073C01EEFDF4600815DFC /* Model */,
 				604073BF1EEFDF3C00815DFC /* 基础 */,
@@ -609,6 +622,7 @@
 				604073A21EEFDDEA00815DFC /* runlooptwoViewController.m in Sources */,
 				6040733A1EEFDBAA00815DFC /* main.m in Sources */,
 				604073851EEFDD8100815DFC /* FirstViewController.m in Sources */,
+				603EF3C91EF119F1001353BD /* refreshwithRACViewController.m in Sources */,
 				6040739F1EEFDDE900815DFC /* imageCellTestViewController.m in Sources */,
 				604073B51EEFDE5B00815DFC /* CAGradientLearnViewController.m in Sources */,
 				604073961EEFDDD800815DFC /* Person.m in Sources */,
