@@ -36,7 +36,9 @@
   
     [self takeUntill_rac];
 }
-
+/*doNext:是在执行sendNext:之前执行的操作，就是订阅成功之后，将要发送订阅数据时会先执行此方法。
+ doNext:、doCompleted、doError:
+ */
 
 -(void)takeUntill_rac{
     RACSubject * subject = [RACSubject subject];

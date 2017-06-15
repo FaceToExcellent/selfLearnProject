@@ -16,8 +16,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.VCClassNameArray = @[@"RAClearnViewController",@"RACAndMVVMlearnViewController",@"RACSignalHandleViewController",@"refreshwithRACViewController",@"combineViewController"];
-    self.VCClasstitleArray = @[@"RAC",@"RAC+MVVM",@"RAC信号处理",@"RAC实现上下拉加载",@"RAC合并操作"];
+    self.VCClassNameArray = @[@"RAClearnViewController",@"RACAndMVVMlearnViewController",@"RACSignalHandleViewController",@"refreshwithRACViewController",@"combineViewController",@"RACSequenceViewController"];
+    self.VCClasstitleArray = @[@"RAC",@"RAC+MVVM",@"RAC信号处理",@"RAC实现上下拉加载",@"RAC合并操作",@"RACSequence序列"];
     
 }
 
