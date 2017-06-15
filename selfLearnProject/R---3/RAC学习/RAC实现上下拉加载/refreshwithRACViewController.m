@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _dataarray = [NSMutableArray arrayWithCapacity:4];
-    NSArray * array = @[@"这是第一个",@"这是第一个",@"这是第一个",@"这是第一个",@"这是第一个"];
+    NSArray * array = @[@"这是第一个",@"这是第2个",@"这是第3个",@"这是第4个",@"这是第5个"];
     [_dataarray addObjectsFromArray:array];
     [self tableviewMaker];
     [self loadMoreData];

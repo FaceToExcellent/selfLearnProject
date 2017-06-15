@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		602F53151EF225C900B69450 /* combineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F53141EF225C900B69450 /* combineViewController.m */; };
 		602F53191EF22FA200B69450 /* RACSequenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F53181EF22FA200B69450 /* RACSequenceViewController.m */; };
+		602F531D1EF27BDB00B69450 /* UIButton+mycategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F531C1EF27BDB00B69450 /* UIButton+mycategory.m */; };
 		603EF3C91EF119F1001353BD /* refreshwithRACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 603EF3C81EF119F1001353BD /* refreshwithRACViewController.m */; };
 		6040733A1EEFDBAA00815DFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073391EEFDBAA00815DFC /* main.m */; };
 		604073451EEFDBAA00815DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604073441EEFDBAA00815DFC /* Assets.xcassets */; };
@@ -71,6 +72,8 @@
 		602F53141EF225C900B69450 /* combineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = combineViewController.m; sourceTree = "<group>"; };
 		602F53171EF22FA200B69450 /* RACSequenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACSequenceViewController.h; sourceTree = "<group>"; };
 		602F53181EF22FA200B69450 /* RACSequenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSequenceViewController.m; sourceTree = "<group>"; };
+		602F531B1EF27BDB00B69450 /* UIButton+mycategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+mycategory.h"; sourceTree = "<group>"; };
+		602F531C1EF27BDB00B69450 /* UIButton+mycategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+mycategory.m"; sourceTree = "<group>"; };
 		603EF3C71EF119F1001353BD /* refreshwithRACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = refreshwithRACViewController.h; sourceTree = "<group>"; };
 		603EF3C81EF119F1001353BD /* refreshwithRACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = refreshwithRACViewController.m; sourceTree = "<group>"; };
 		604073351EEFDBAA00815DFC /* selfLearnProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = selfLearnProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -184,6 +187,15 @@
 				602F53181EF22FA200B69450 /* RACSequenceViewController.m */,
 			);
 			path = RACSequence;
+			sourceTree = "<group>";
+		};
+		602F531A1EF27B2400B69450 /* 统计用户行为 */ = {
+			isa = PBXGroup;
+			children = (
+				602F531B1EF27BDB00B69450 /* UIButton+mycategory.h */,
+				602F531C1EF27BDB00B69450 /* UIButton+mycategory.m */,
+			);
+			path = "统计用户行为";
 			sourceTree = "<group>";
 		};
 		603EF3C61EF119A0001353BD /* RAC实现上下拉加载 */ = {
@@ -324,6 +336,7 @@
 		6040738F1EEFDDB400815DFC /* Runtime学习 */ = {
 			isa = PBXGroup;
 			children = (
+				602F531A1EF27B2400B69450 /* 统计用户行为 */,
 				604073911EEFDDD800815DFC /* RuntimetestViewController.h */,
 				604073921EEFDDD800815DFC /* RuntimetestViewController.m */,
 				604073931EEFDDD800815DFC /* Person.h */,
@@ -655,6 +668,7 @@
 				604073961EEFDDD800815DFC /* Person.m in Sources */,
 				6040738B1EEFDD9000815DFC /* ThirdViewController.m in Sources */,
 				604073CA1EEFE0C900815DFC /* LoginViewModel.m in Sources */,
+				602F531D1EF27BDB00B69450 /* UIButton+mycategory.m in Sources */,
 				604073951EEFDDD800815DFC /* RuntimetestViewController.m in Sources */,
 				604073771EEFDC8900815DFC /* backViewController.m in Sources */,
 				604073B21EEFDE5100815DFC /* AVLearn2ViewController.m in Sources */,

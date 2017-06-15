@@ -32,9 +32,13 @@
     [_loginbutton setBackgroundColor:[UIColor greenColor]];
     [_loginbutton setTitle:@"登陆" forState:UIControlStateNormal];
     [self.view addSubview:_loginbutton];
-    
+    [_loginbutton addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
   
-    [self takeUntill_rac];
+    //[self takeUntill_rac];
+}
+
+-(void)click:(UIButton*)btn{
+    
 }
 /*doNext:是在执行sendNext:之前执行的操作，就是订阅成功之后，将要发送订阅数据时会先执行此方法。
  doNext:、doCompleted、doError:
