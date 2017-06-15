@@ -19,4 +19,13 @@
 
 #define VIEWHEIGHT self.view.frame.size.height
 #define VIEWWIDTH self.view.frame.size.width
+
+#ifdef DEBUG
+#define NSLog(FORMAT, ...) fprintf(__stderrp,"{file: §---§ %s\n line: §---§ %d\n func: §---§ %s\n word: ç-_-ß %s\n}",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, __FUNCTION__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define NSLog(...)
+#endif
+
+
+
 #endif /* PrefixHeader_pch */

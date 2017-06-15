@@ -7,7 +7,7 @@
 //
 
 #import "refreshwithRACViewController.h"
-#import "ReactiveObjC.h"//不会智能提示
+#import "ReactiveObjC.h"//不能智能提示
 @interface refreshwithRACViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView * tableView;
 @property(nonatomic,strong)NSMutableArray * dataarray;

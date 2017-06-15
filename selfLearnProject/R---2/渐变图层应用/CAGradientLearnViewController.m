@@ -23,8 +23,8 @@
     lable.center = CGPointMake(140, 100);
     /*
      // 疑问：label只是用来做文字裁剪，能否不添加到view上。
-     // 必须要把Label添加到view上，如果不添加到view上，label的图层就不会调用drawRect方法绘制文字，也就没有文字裁剪了。
-     // 如何验证，自定义Label,重写drawRect方法，看是否调用,发现不添加上去，就不会调用
+     // 必须要把Label添加到view上，如果不添加到view上，label的图层就不能调用drawRect方法绘制文字，也就没有文字裁剪了。
+     // 如何验证，自定义Label,重写drawRect方法，看是否调用,发现不添加上去，就不能调用
 */
     [self.view addSubview:lable];
     
@@ -35,7 +35,7 @@
     //设置渐变层的颜色，随机颜色渐变
     _gradientLayer.colors = @[(id)[self randomColor].CGColor,(id)[self randomColor].CGColor,(id)[self randomColor].CGColor];
     /* // 疑问:渐变层能不能加在label上
-     // 不能，mask原理：默认会显示mask层底部的内容，如果渐变层放在mask层上，就不会显示了*/
+     // 不能，mask原理：默认会显示mask层底部的内容，如果渐变层放在mask层上，就不能显示了*/
     
     //添加渐变层到控制器的View层
     [self.view.layer addSublayer:_gradientLayer];

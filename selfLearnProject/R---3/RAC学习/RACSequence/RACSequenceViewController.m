@@ -7,7 +7,7 @@
 //
 
 #import "RACSequenceViewController.h"
-#import "ReactiveObjC.h"//不会智能提示
+#import "ReactiveObjC.h"//不能智能提示
 @interface RACSequenceViewController ()
 
 @end
@@ -18,7 +18,7 @@
     [super viewDidLoad];
     
     
-    [self dictSequence];
+    [self arraySequence];
     
 }
 
@@ -29,7 +29,7 @@
     RACSequence * arraySeq = array.rac_sequence;
     RACSignal * arraySignal = arraySeq.signal;
     [arraySignal subscribeNext:^(id  _Nullable x) {
-         NSLog(@"subscriber array receive value: %@",x);
+         NSLog(@"%@",x);
     }];
     //此处会多次输出直到数组输出完毕
     
@@ -50,7 +50,25 @@
 //    // 所有的value的序列
 //    RACSequence *valuesSeq = dict.rac_valueSequence;
 }
-
+-(void)reduce{
+    NSArray *array1 = @[@"a", @"b", @"c"];
+    NSArray *array2 = @[@1, @2, @3];
+    
+    id a = [array1.rac_sequence foldLeftWithStart:@"d" reduce:^id(id accumulator, id value) {
+        NSLog(@"accumulator = %@, value = %@", accumulator, value);
+        return [NSString stringWithFormat:@"%@ + %@",accumulator, value];
+    }];
+    NSLog(@"a = %@", a);
+    
+    id b = [array2.rac_sequence foldRightWithStart:@(4) reduce:^id(id first, RACSequence *rest) {
+        NSLog(@"first = %@, rest.head = %@",first, rest.head);
+        return @([first integerValue] + [rest.head integerValue]);
+    }];
+    NSLog(@"b = %@", b);
+    
+    
+    NSLog(@"");
+}
 
 
 

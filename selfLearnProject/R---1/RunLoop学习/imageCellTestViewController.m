@@ -141,7 +141,7 @@ static void CallBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, 
     
 }
 
-//MARK: 把图片放到工程里然后用路径去取，会卡，把图片直接放到Assets里面，用[image imageName:]不会卡
+//MARK: 把图片放到工程里然后用路径去取，会卡，把图片直接放到Assets里面，用[image imageName:]不能卡
 -(void)addiMageWith1:(UITableViewCell*)cell
 {
     UIImageView * imageView =[[UIImageView alloc]init];

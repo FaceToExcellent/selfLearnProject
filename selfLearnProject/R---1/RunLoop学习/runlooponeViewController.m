@@ -22,6 +22,7 @@
 //   [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerclick) userInfo:nil repeats:YES]
 //    ;
     
+     NSLog(@"runloop");
   NSTimer * timer=   [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(timerclick) userInfo:nil repeats:YES];
     //默认mode
     //NSDefaultRunLoopMode
@@ -29,7 +30,7 @@
     //NSRunLoopCommonModes   仅仅是个占位符 （在以上两种模式下）
     [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
     
-  //  button 并不会影响runloop
+  //  button 并不能影响runloop
 //    UIButton * but = [[UIButton alloc]init];
 //    but.frame = CGRectMake(50, 100, 200, 100);
 //    [but setBackgroundColor:[UIColor grayColor]];

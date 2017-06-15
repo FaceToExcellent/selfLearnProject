@@ -7,7 +7,7 @@
 //
 
 #import "RACSignalHandleViewController.h"
-#import "ReactiveObjC.h"//不会智能提示
+#import "ReactiveObjC.h"//不能智能提示
 @interface RACSignalHandleViewController ()
 @property(nonatomic,strong) UITextField * field ;
 @property(nonatomic,strong) UITextField * field2 ;
@@ -141,13 +141,13 @@
         NSLog(@"%@",x);
     }];
     
-    /*加了节流管道，后面跟上了类型为NSTimeInterval的参数后，只有0.5S内信号不产生变化才会发送请求，这样快速的输入也不会造成多次输出。*/
+    /*加了节流管道，后面跟上了类型为NSTimeInterval的参数后，只有0.5S内信号不产生变化才会发送请求，这样快速的输入也不能造成多次输出。*/
     
     
 }
 
 -(void)distintUntilChanged_rac{
-    /*网络请求中为了减轻服务器压力，无用的请求我们应该尽可能不发送。distinctUntilChanged的作用是使RAC不会连续发送两次相同的信号，这样就解决了这个问题。*/
+    /*网络请求中为了减轻服务器压力，无用的请求我们应该尽可能不发送。distinctUntilChanged的作用是使RAC不能连续发送两次相同的信号，这样就解决了这个问题。*/
     [[[_field rac_textSignal]distinctUntilChanged]subscribeNext:^(NSString * _Nullable x) {
         NSLog(@"distintUntilChanged===%@",x);
     }];
@@ -171,7 +171,7 @@
        NSLog(@"%@", error);
    }];
     
-    /*由于在创建信号是限定了延迟3秒发送，但是加了timeout2秒的限定，所以这一定是一个超时信号。这个信号被订阅后，由于超时，不会执行订阅成功的输出x方法，而是跳到error的块输出了错误信息。timeout在用RAC封装网络请求时可以节省不少的代码量。*/
+    /*由于在创建信号是限定了延迟3秒发送，但是加了timeout2秒的限定，所以这一定是一个超时信号。这个信号被订阅后，由于超时，不能执行订阅成功的输出x方法，而是跳到error的块输出了错误信息。timeout在用RAC封装网络请求时可以节省不少的代码量。*/
 
 }
 

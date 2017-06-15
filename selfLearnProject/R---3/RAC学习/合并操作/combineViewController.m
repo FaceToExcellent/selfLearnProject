@@ -7,7 +7,7 @@
 //
 
 #import "combineViewController.h"
-#import "ReactiveObjC.h"//不会智能提示
+#import "ReactiveObjC.h"//不能智能提示
 
 @interface combineViewController ()
 @property(nonatomic,strong) UITextField * field ;
@@ -123,7 +123,7 @@
         NSLog(@"%@", x); //所有的值都被包装成了元组
     }];
     
-    //发送信号 交互顺序，元组内元素的顺序不会变，跟发送的顺序无关，而是跟压缩的顺序有关[signalA zipWith:signalB]---先是A后是B
+    //发送信号 交互顺序，元组内元素的顺序不能变，跟发送的顺序无关，而是跟压缩的顺序有关[signalA zipWith:signalB]---先是A后是B
     [subjA sendNext:@"A"];
     [subjB sendNext:@"B"];
     
