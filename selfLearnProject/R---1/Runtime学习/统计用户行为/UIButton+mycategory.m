@@ -34,7 +34,7 @@ NSString * const fy_btnCurrentActionBlockKey = nil;
         Method hookMethod = class_getInstanceMethod(self, hookSEL);
         
         //可以直接用这一句交换不用下面的方法
-        //        method_exchangeImplementations(origilalMethod, hookMethod);
+      //  method_exchangeImplementations(origilalMethod, hookMethod);
         
         
         /**
@@ -64,6 +64,7 @@ NSString * const fy_btnCurrentActionBlockKey = nil;
         
         [self  setCurrentActionBlock:^{
             @try {
+                //这句话啥意思 不懂
                 ((void (*)(void *, SEL,  typeof(weakSelf) ))objc_msgSend)((__bridge void *)(weakTarget), action , weakSelf);
             } @catch (NSException *exception) {
             } @finally {
