@@ -43,7 +43,7 @@
         }
         
     }]distinctUntilChanged]delay:0.5] subscribeNext:^(id  _Nullable x) {
-       // NSLog(@"%@",x); 这里的delay模拟加载时间 
+       // NSLog(@"%@",x); 这里的delay模拟加载时间
         if ([x integerValue] == 1) {
             [_tableView reloadData];
             
@@ -53,6 +53,9 @@
         
         
     }];
+    
+    
+    
     
     
 }

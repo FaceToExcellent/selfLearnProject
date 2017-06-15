@@ -34,9 +34,27 @@
     [self.view addSubview:_loginbutton];
     
   
-    [self flattenMap_rac];
+    [self takeUntill_rac];
 }
 
+
+-(void)takeUntill_rac{
+    RACSubject * subject = [RACSubject subject];
+    RACSubject * subject2= [RACSubject subject];
+    [[subject takeUntil:subject2]subscribeNext:^(id  _Nullable x) {
+       NSLog(@"%@", x);
+    }];
+    
+    [subject sendNext:@"1"];
+    [subject sendNext:@"2"];
+    [subject2 sendNext:@"3"];
+    [subject2 sendCompleted];
+    [subject sendNext:@"4"];
+    
+    /*输出结果：selfLearnProject[1028:35597] 1
+              selfLearnProject[1028:35597] 2 */
+    
+}
 -(void)signal{
     RACSignal * signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         [subscriber sendNext:@"signal"];
