@@ -45,6 +45,7 @@
 		604073CA1EEFE0C900815DFC /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073C81EEFE0C900815DFC /* LoginViewModel.m */; };
 		604073CF1EEFE0D400815DFC /* RAClearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073CC1EEFE0D400815DFC /* RAClearnViewController.m */; };
 		604073D01EEFE0D400815DFC /* RACAndMVVMlearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073CE1EEFE0D400815DFC /* RACAndMVVMlearnViewController.m */; };
+		60F5C0371EFCC2DA0080883C /* dayoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F5C0361EFCC2DA0080883C /* dayoneViewController.m */; };
 		D3D897EA8D77F77D2326912C /* libPods-selfLearnProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E924996B0806E51B01591F /* libPods-selfLearnProject.a */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +143,8 @@
 		604073CC1EEFE0D400815DFC /* RAClearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAClearnViewController.m; sourceTree = "<group>"; };
 		604073CD1EEFE0D400815DFC /* RACAndMVVMlearnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACAndMVVMlearnViewController.h; sourceTree = "<group>"; };
 		604073CE1EEFE0D400815DFC /* RACAndMVVMlearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACAndMVVMlearnViewController.m; sourceTree = "<group>"; };
+		60F5C0351EFCC2DA0080883C /* dayoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dayoneViewController.h; sourceTree = "<group>"; };
+		60F5C0361EFCC2DA0080883C /* dayoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dayoneViewController.m; sourceTree = "<group>"; };
 		7DB64691A841809C2A1379F1 /* Pods-selfLearnProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-selfLearnProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-selfLearnProject/Pods-selfLearnProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -336,6 +339,7 @@
 		6040738F1EEFDDB400815DFC /* Runtime学习 */ = {
 			isa = PBXGroup;
 			children = (
+				60F5C0341EFCC2B20080883C /* 深井冰入院治疗 */,
 				602F531A1EF27B2400B69450 /* 统计用户行为 */,
 				604073911EEFDDD800815DFC /* RuntimetestViewController.h */,
 				604073921EEFDDD800815DFC /* RuntimetestViewController.m */,
@@ -451,6 +455,15 @@
 				604073C31EEFE0BD00815DFC /* RACSignalHandleViewController.m */,
 			);
 			path = "信号处理";
+			sourceTree = "<group>";
+		};
+		60F5C0341EFCC2B20080883C /* 深井冰入院治疗 */ = {
+			isa = PBXGroup;
+			children = (
+				60F5C0351EFCC2DA0080883C /* dayoneViewController.h */,
+				60F5C0361EFCC2DA0080883C /* dayoneViewController.m */,
+			);
+			path = "深井冰入院治疗";
 			sourceTree = "<group>";
 		};
 		719F122317983DC4BFDBDF09 /* Frameworks */ = {
@@ -676,6 +689,7 @@
 				604073AC1EEFDE4500815DFC /* socketlearnserviceViewController.m in Sources */,
 				604073881EEFDD8A00815DFC /* SecondViewController.m in Sources */,
 				604073CF1EEFE0D400815DFC /* RAClearnViewController.m in Sources */,
+				60F5C0371EFCC2DA0080883C /* dayoneViewController.m in Sources */,
 				604073B81EEFDE6500815DFC /* biaozhixunhuanViewController.m in Sources */,
 				604073B11EEFDE5100815DFC /* AVFoudationlearnViewController.m in Sources */,
 				604073A01EEFDDEA00815DFC /* GCDtimerViewController.m in Sources */,

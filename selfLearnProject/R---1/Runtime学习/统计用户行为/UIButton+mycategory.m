@@ -33,7 +33,7 @@ NSString * const fy_btnCurrentActionBlockKey = nil;
         Method origilalMethod = class_getInstanceMethod(self, origilaSEL);
         Method hookMethod = class_getInstanceMethod(self, hookSEL);
         
-        //可以直接用这一句交换不用下面的方法
+        //不可以直接用这一句交换不用下面的方法 会蹦 
       //  method_exchangeImplementations(origilalMethod, hookMethod);
         
         
