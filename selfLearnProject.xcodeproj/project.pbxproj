@@ -13,6 +13,9 @@
 		603E32861F03465800D6FD77 /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 603E32851F03465800D6FD77 /* testViewController.m */; };
 		603E32891F03467E00D6FD77 /* testModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 603E32881F03467E00D6FD77 /* testModel.m */; };
 		603E328C1F0347D800D6FD77 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 603E328B1F0347D800D6FD77 /* NSObject+Runtime.m */; };
+		603E32901F038F3400D6FD77 /* usetestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 603E328F1F038F3400D6FD77 /* usetestViewController.m */; };
+		603E32931F038F4E00D6FD77 /* cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 603E32921F038F4E00D6FD77 /* cat.m */; };
+		603E32981F039CBD00D6FD77 /* dogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 603E32971F039CBD00D6FD77 /* dogModel.m */; };
 		603EF3C91EF119F1001353BD /* refreshwithRACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 603EF3C81EF119F1001353BD /* refreshwithRACViewController.m */; };
 		6040733A1EEFDBAA00815DFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073391EEFDBAA00815DFC /* main.m */; };
 		604073451EEFDBAA00815DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604073441EEFDBAA00815DFC /* Assets.xcassets */; };
@@ -84,6 +87,12 @@
 		603E32881F03467E00D6FD77 /* testModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testModel.m; sourceTree = "<group>"; };
 		603E328A1F0347D800D6FD77 /* NSObject+Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
 		603E328B1F0347D800D6FD77 /* NSObject+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
+		603E328E1F038F3400D6FD77 /* usetestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usetestViewController.h; sourceTree = "<group>"; };
+		603E328F1F038F3400D6FD77 /* usetestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = usetestViewController.m; sourceTree = "<group>"; };
+		603E32911F038F4E00D6FD77 /* cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cat.h; path = ../cat.h; sourceTree = "<group>"; };
+		603E32921F038F4E00D6FD77 /* cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cat.m; path = ../cat.m; sourceTree = "<group>"; };
+		603E32961F039CBD00D6FD77 /* dogModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dogModel.h; sourceTree = "<group>"; };
+		603E32971F039CBD00D6FD77 /* dogModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dogModel.m; sourceTree = "<group>"; };
 		603EF3C71EF119F1001353BD /* refreshwithRACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = refreshwithRACViewController.h; sourceTree = "<group>"; };
 		603EF3C81EF119F1001353BD /* refreshwithRACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = refreshwithRACViewController.m; sourceTree = "<group>"; };
 		604073351EEFDBAA00815DFC /* selfLearnProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = selfLearnProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -221,6 +230,43 @@
 				603E328B1F0347D800D6FD77 /* NSObject+Runtime.m */,
 			);
 			path = "runtime功能运用";
+			sourceTree = "<group>";
+		};
+		603E328D1F038F1400D6FD77 /* runtime几种基础用法 */ = {
+			isa = PBXGroup;
+			children = (
+				603E32991F03A0A400D6FD77 /* 字典与模型互转 */,
+				603E32951F039CA400D6FD77 /* 自动归档 */,
+				603E32941F03990E00D6FD77 /* objc_msgSend使用 */,
+				603E328E1F038F3400D6FD77 /* usetestViewController.h */,
+				603E328F1F038F3400D6FD77 /* usetestViewController.m */,
+			);
+			path = "runtime几种基础用法";
+			sourceTree = "<group>";
+		};
+		603E32941F03990E00D6FD77 /* objc_msgSend使用 */ = {
+			isa = PBXGroup;
+			children = (
+				603E32911F038F4E00D6FD77 /* cat.h */,
+				603E32921F038F4E00D6FD77 /* cat.m */,
+			);
+			path = "objc_msgSend使用";
+			sourceTree = "<group>";
+		};
+		603E32951F039CA400D6FD77 /* 自动归档 */ = {
+			isa = PBXGroup;
+			children = (
+				603E32961F039CBD00D6FD77 /* dogModel.h */,
+				603E32971F039CBD00D6FD77 /* dogModel.m */,
+			);
+			path = "自动归档";
+			sourceTree = "<group>";
+		};
+		603E32991F03A0A400D6FD77 /* 字典与模型互转 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "字典与模型互转";
 			sourceTree = "<group>";
 		};
 		603EF3C61EF119A0001353BD /* RAC实现上下拉加载 */ = {
@@ -361,6 +407,7 @@
 		6040738F1EEFDDB400815DFC /* Runtime学习 */ = {
 			isa = PBXGroup;
 			children = (
+				603E328D1F038F1400D6FD77 /* runtime几种基础用法 */,
 				603E32831F03461500D6FD77 /* runtime功能运用 */,
 				60F5C0341EFCC2B20080883C /* 深井冰入院治疗 */,
 				602F531A1EF27B2400B69450 /* 统计用户行为 */,
@@ -697,8 +744,10 @@
 				604073A21EEFDDEA00815DFC /* runlooptwoViewController.m in Sources */,
 				6040733A1EEFDBAA00815DFC /* main.m in Sources */,
 				604073851EEFDD8100815DFC /* FirstViewController.m in Sources */,
+				603E32981F039CBD00D6FD77 /* dogModel.m in Sources */,
 				603EF3C91EF119F1001353BD /* refreshwithRACViewController.m in Sources */,
 				602F53191EF22FA200B69450 /* RACSequenceViewController.m in Sources */,
+				603E32901F038F3400D6FD77 /* usetestViewController.m in Sources */,
 				6040739F1EEFDDE900815DFC /* imageCellTestViewController.m in Sources */,
 				604073B51EEFDE5B00815DFC /* CAGradientLearnViewController.m in Sources */,
 				604073961EEFDDD800815DFC /* Person.m in Sources */,
@@ -716,6 +765,7 @@
 				604073CF1EEFE0D400815DFC /* RAClearnViewController.m in Sources */,
 				60F5C0371EFCC2DA0080883C /* dayoneViewController.m in Sources */,
 				604073B81EEFDE6500815DFC /* biaozhixunhuanViewController.m in Sources */,
+				603E32931F038F4E00D6FD77 /* cat.m in Sources */,
 				604073B11EEFDE5100815DFC /* AVFoudationlearnViewController.m in Sources */,
 				604073A01EEFDDEA00815DFC /* GCDtimerViewController.m in Sources */,
 				603E32891F03467E00D6FD77 /* testModel.m in Sources */,
