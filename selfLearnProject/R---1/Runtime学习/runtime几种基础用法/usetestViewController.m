@@ -7,7 +7,7 @@
 //
 #import "cat.h"
 #import "dogModel.h"
-
+#import "NSObject+KeyValues.h"
 
 
 #import "usetestViewController.h"
@@ -43,7 +43,9 @@
 //     [self demo3];
 }
 -(void)demo4{
-    
+    //这种方式有点多余 并不高明
+      dogModel *model = [dogModel objectWithKeyValues:dictionary];
+    NSLog(@"model%@",model.name);
 }
 
 -(void)demo3{

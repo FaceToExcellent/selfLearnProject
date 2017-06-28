@@ -16,6 +16,7 @@
 		603E32901F038F3400D6FD77 /* usetestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 603E328F1F038F3400D6FD77 /* usetestViewController.m */; };
 		603E32931F038F4E00D6FD77 /* cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 603E32921F038F4E00D6FD77 /* cat.m */; };
 		603E32981F039CBD00D6FD77 /* dogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 603E32971F039CBD00D6FD77 /* dogModel.m */; };
+		603E329C1F03AA6B00D6FD77 /* NSObject+KeyValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 603E329B1F03AA6B00D6FD77 /* NSObject+KeyValues.m */; };
 		603EF3C91EF119F1001353BD /* refreshwithRACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 603EF3C81EF119F1001353BD /* refreshwithRACViewController.m */; };
 		6040733A1EEFDBAA00815DFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073391EEFDBAA00815DFC /* main.m */; };
 		604073451EEFDBAA00815DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604073441EEFDBAA00815DFC /* Assets.xcassets */; };
@@ -93,6 +94,8 @@
 		603E32921F038F4E00D6FD77 /* cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cat.m; path = ../cat.m; sourceTree = "<group>"; };
 		603E32961F039CBD00D6FD77 /* dogModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dogModel.h; sourceTree = "<group>"; };
 		603E32971F039CBD00D6FD77 /* dogModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dogModel.m; sourceTree = "<group>"; };
+		603E329A1F03AA6B00D6FD77 /* NSObject+KeyValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KeyValues.h"; sourceTree = "<group>"; };
+		603E329B1F03AA6B00D6FD77 /* NSObject+KeyValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KeyValues.m"; sourceTree = "<group>"; };
 		603EF3C71EF119F1001353BD /* refreshwithRACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = refreshwithRACViewController.h; sourceTree = "<group>"; };
 		603EF3C81EF119F1001353BD /* refreshwithRACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = refreshwithRACViewController.m; sourceTree = "<group>"; };
 		604073351EEFDBAA00815DFC /* selfLearnProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = selfLearnProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -235,6 +238,8 @@
 		603E328D1F038F1400D6FD77 /* runtime几种基础用法 */ = {
 			isa = PBXGroup;
 			children = (
+				603E329E1F03B18000D6FD77 /* 动态方法加载 */,
+				603E329D1F03B16E00D6FD77 /* 给Category添加属性 */,
 				603E32991F03A0A400D6FD77 /* 字典与模型互转 */,
 				603E32951F039CA400D6FD77 /* 自动归档 */,
 				603E32941F03990E00D6FD77 /* objc_msgSend使用 */,
@@ -265,8 +270,24 @@
 		603E32991F03A0A400D6FD77 /* 字典与模型互转 */ = {
 			isa = PBXGroup;
 			children = (
+				603E329A1F03AA6B00D6FD77 /* NSObject+KeyValues.h */,
+				603E329B1F03AA6B00D6FD77 /* NSObject+KeyValues.m */,
 			);
 			path = "字典与模型互转";
+			sourceTree = "<group>";
+		};
+		603E329D1F03B16E00D6FD77 /* 给Category添加属性 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "给Category添加属性";
+			sourceTree = "<group>";
+		};
+		603E329E1F03B18000D6FD77 /* 动态方法加载 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "动态方法加载";
 			sourceTree = "<group>";
 		};
 		603EF3C61EF119A0001353BD /* RAC实现上下拉加载 */ = {
@@ -745,6 +766,7 @@
 				6040733A1EEFDBAA00815DFC /* main.m in Sources */,
 				604073851EEFDD8100815DFC /* FirstViewController.m in Sources */,
 				603E32981F039CBD00D6FD77 /* dogModel.m in Sources */,
+				603E329C1F03AA6B00D6FD77 /* NSObject+KeyValues.m in Sources */,
 				603EF3C91EF119F1001353BD /* refreshwithRACViewController.m in Sources */,
 				602F53191EF22FA200B69450 /* RACSequenceViewController.m in Sources */,
 				603E32901F038F3400D6FD77 /* usetestViewController.m in Sources */,
