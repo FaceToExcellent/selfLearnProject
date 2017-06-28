@@ -30,4 +30,96 @@
     
     return [NSArray arrayWithArray:mutableList];
 }
+
++ (NSArray *)fetchPropertyList{
+    unsigned int count  = 0;
+    objc_property_t * propertylist = class_copyPropertyList(self, &count);
+    NSMutableArray * mutabelist  = [NSMutableArray arrayWithCapacity:count];
+    for (unsigned int i = 0; i<count; i++) {
+        const char * prpertyName = property_getName(propertylist[i]);
+        [mutabelist addObject:[NSString stringWithUTF8String:prpertyName]];
+    }
+    free(propertylist);
+    return [NSArray arrayWithArray:mutabelist];
+}
+
++ (NSArray *)fetchInstanceMethodList{
+    unsigned int count = 0;
+    Method * methodList = class_copyMethodList(self, &count);
+    NSMutableArray * mutablelist  = [NSMutableArray arrayWithCapacity:count];
+    for (unsigned int i=0; i<count; i++) {
+        Method method  = methodList[i];
+        SEL methodName = method_getName(method);
+        [mutablelist addObject:NSStringFromSelector(methodName)];
+        
+    }
+    free(methodList);
+    return [NSArray arrayWithArray:mutablelist];
+    
+}
+
++ (NSArray *)fetchClassMethodList{
+    unsigned int count = 0 ;
+    Method * methoList = class_copyMethodList(object_getClass(self), &count);
+    NSMutableArray * mutableList = [NSMutableArray arrayWithCapacity:count];
+    for (unsigned int i=0; i<count; i++) {
+        Method method = methoList[i];
+        SEL methName = method_getName(method);
+        [mutableList addObject: NSStringFromSelector(methName)];
+        
+    }
+    
+    free(methoList);
+    return  [NSArray arrayWithArray:mutableList];
+    
+}
+
++ (NSArray *)fetchProtocolList{
+    unsigned int count = 0;
+    __unsafe_unretained Protocol ** protocolList = class_copyProtocolList(self, &count);
+    NSMutableArray * mutableList  =[NSMutableArray arrayWithCapacity:count];
+    for (unsigned int i = 0; i<count; i++) {
+        Protocol * protocol = protocolList[i];
+        const char * protocolName = protocol_getName(protocol);
+        [mutableList addObject:[NSString stringWithUTF8String:protocolName]];
+    }
+    
+    return [NSArray arrayWithArray:mutableList];
+}
+
++ (void)addMethod:(SEL)methodSel methodImp:(SEL)methodImp{
+    Method method = class_getInstanceMethod(self, methodImp);
+    IMP methodIMP = method_getImplementation(method);
+    const char *types = method_getTypeEncoding(method);
+    class_addMethod(self, methodSel, methodIMP, types);
+}
+
++ (void)swapMethod:(SEL)originMethod currentMethod:(SEL)currentMethod
+{
+    Method firstMethod = class_getInstanceMethod(self, originMethod);
+    Method secondMethod = class_getInstanceMethod(self, currentMethod);
+    method_exchangeImplementations(firstMethod, secondMethod);
+}
++ (void)swapClassMethod:(SEL)originMethod currentMethod:(SEL)currentMethod
+{
+    Method firstMethod = class_getClassMethod(self, originMethod);
+    Method secondMethod = class_getClassMethod(self, currentMethod);
+    method_exchangeImplementations(firstMethod, secondMethod);
+}
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

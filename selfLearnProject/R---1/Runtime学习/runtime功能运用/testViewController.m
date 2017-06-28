@@ -18,8 +18,49 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
   
+    [self demo7];
+    
+}
+
+-(void)demo7{
+    //方法调换成功
+    [testModel classMethod:@"class---class"];
+   
+}
+-(void)demo6{
+    //添加进去了 但是不能直接调用
+    [testModel addMethod:@selector(functionmyselfadded) methodImp:@selector(functionmyselfadded)];
+    NSArray * arr = [testModel  fetchInstanceMethodList];
+    NSLog(@"fetchInstanceMethodList---%@",arr);
+}
+-(void)demo5{
+    NSArray * arr = [testModel  fetchProtocolList];
+    NSLog(@"fetchProtocolList---%@",arr);
+}
+-(void)demo4{
+    NSArray * arr = [testModel  fetchClassMethodList];
+    NSLog(@"fetchClassMethodList---%@",arr);
+}
+
+-(void)demo3{
+    NSArray * arr = [testModel  fetchInstanceMethodList];
+    NSLog(@"fetchInstanceMethodList---%@",arr);
+}
+-(void)demo1{
     NSArray * arr = [testModel  fetchIvarList];
-    NSLog(@"arr---%@",arr);
+    NSLog(@"fetchIvarList---%@",arr);
+    
+}
+
+-(void)demo2{
+    NSArray * arr1 = [testModel fetchPropertyList];
+    
+    NSLog(@"fetchPropertyList---%@",arr1);
+}
+
+
+-(void)functionmyselfadded{
+    NSLog(@"这个方法是我自己添加的");
 }
 
 - (void)didReceiveMemoryWarning {

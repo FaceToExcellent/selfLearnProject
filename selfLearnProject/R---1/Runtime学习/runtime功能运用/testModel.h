@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface testModel : NSObject
+@interface testModel : NSObject<UITextFieldDelegate>
 @property (nonatomic, copy) NSString *publicProperty;
+
+
++ (void)classMethod:(NSString *)param;
+
+- (void)publicMethod:(NSString *)param;
 @end
