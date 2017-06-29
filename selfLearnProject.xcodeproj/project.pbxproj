@@ -10,6 +10,8 @@
 		602F53151EF225C900B69450 /* combineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F53141EF225C900B69450 /* combineViewController.m */; };
 		602F53191EF22FA200B69450 /* RACSequenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F53181EF22FA200B69450 /* RACSequenceViewController.m */; };
 		602F531D1EF27BDB00B69450 /* UIButton+mycategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F531C1EF27BDB00B69450 /* UIButton+mycategory.m */; };
+		6032DF581F04994A00D399E1 /* UIButton+ClickBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032DF571F04994A00D399E1 /* UIButton+ClickBlock.m */; };
+		6032DF5B1F049C3F00D399E1 /* UIButton+mystate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032DF5A1F049C3F00D399E1 /* UIButton+mystate.m */; };
 		603E32861F03465800D6FD77 /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 603E32851F03465800D6FD77 /* testViewController.m */; };
 		603E32891F03467E00D6FD77 /* testModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 603E32881F03467E00D6FD77 /* testModel.m */; };
 		603E328C1F0347D800D6FD77 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 603E328B1F0347D800D6FD77 /* NSObject+Runtime.m */; };
@@ -82,6 +84,10 @@
 		602F53181EF22FA200B69450 /* RACSequenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSequenceViewController.m; sourceTree = "<group>"; };
 		602F531B1EF27BDB00B69450 /* UIButton+mycategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+mycategory.h"; sourceTree = "<group>"; };
 		602F531C1EF27BDB00B69450 /* UIButton+mycategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+mycategory.m"; sourceTree = "<group>"; };
+		6032DF561F04994A00D399E1 /* UIButton+ClickBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ClickBlock.h"; sourceTree = "<group>"; };
+		6032DF571F04994A00D399E1 /* UIButton+ClickBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ClickBlock.m"; sourceTree = "<group>"; };
+		6032DF591F049C3F00D399E1 /* UIButton+mystate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+mystate.h"; sourceTree = "<group>"; };
+		6032DF5A1F049C3F00D399E1 /* UIButton+mystate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+mystate.m"; sourceTree = "<group>"; };
 		603E32841F03465700D6FD77 /* testViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testViewController.h; sourceTree = "<group>"; };
 		603E32851F03465800D6FD77 /* testViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testViewController.m; sourceTree = "<group>"; };
 		603E32871F03467E00D6FD77 /* testModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testModel.h; sourceTree = "<group>"; };
@@ -279,6 +285,10 @@
 		603E329D1F03B16E00D6FD77 /* 给Category添加属性 */ = {
 			isa = PBXGroup;
 			children = (
+				6032DF561F04994A00D399E1 /* UIButton+ClickBlock.h */,
+				6032DF571F04994A00D399E1 /* UIButton+ClickBlock.m */,
+				6032DF591F049C3F00D399E1 /* UIButton+mystate.h */,
+				6032DF5A1F049C3F00D399E1 /* UIButton+mystate.m */,
 			);
 			path = "给Category添加属性";
 			sourceTree = "<group>";
@@ -763,12 +773,14 @@
 			files = (
 				604073AB1EEFDE4500815DFC /* socketlearnViewController.m in Sources */,
 				604073A21EEFDDEA00815DFC /* runlooptwoViewController.m in Sources */,
+				6032DF581F04994A00D399E1 /* UIButton+ClickBlock.m in Sources */,
 				6040733A1EEFDBAA00815DFC /* main.m in Sources */,
 				604073851EEFDD8100815DFC /* FirstViewController.m in Sources */,
 				603E32981F039CBD00D6FD77 /* dogModel.m in Sources */,
 				603E329C1F03AA6B00D6FD77 /* NSObject+KeyValues.m in Sources */,
 				603EF3C91EF119F1001353BD /* refreshwithRACViewController.m in Sources */,
 				602F53191EF22FA200B69450 /* RACSequenceViewController.m in Sources */,
+				6032DF5B1F049C3F00D399E1 /* UIButton+mystate.m in Sources */,
 				603E32901F038F3400D6FD77 /* usetestViewController.m in Sources */,
 				6040739F1EEFDDE900815DFC /* imageCellTestViewController.m in Sources */,
 				604073B51EEFDE5B00815DFC /* CAGradientLearnViewController.m in Sources */,

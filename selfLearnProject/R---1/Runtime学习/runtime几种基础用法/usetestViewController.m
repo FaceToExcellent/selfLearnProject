@@ -8,7 +8,8 @@
 #import "cat.h"
 #import "dogModel.h"
 #import "NSObject+KeyValues.h"
-
+#import "UIButton+ClickBlock.h"
+#import "UIButton+mystate.h"
 
 #import "usetestViewController.h"
 #import <objc/runtime.h>
@@ -41,6 +42,20 @@
 
 //    [self demo2];
 //     [self demo3];
+    
+    [self demo5];
+}
+
+-(void)demo5{
+    //这个功能不错
+    UIButton *  button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = CGRectMake(100, 100, 100, 40);
+    button.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:button];
+    button.Mystate = YES;//增加一个状态 在需要时有用
+    button.click = ^{
+        NSLog(@"buttonCLick click");
+    };
 }
 -(void)demo4{
     //这种方式有点多余 并不高明
