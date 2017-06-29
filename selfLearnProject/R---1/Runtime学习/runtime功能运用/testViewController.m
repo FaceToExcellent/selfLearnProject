@@ -9,6 +9,8 @@
 #import "testViewController.h"
 #import "testModel.h"
 #import "NSObject+Runtime.h"
+#import <objc/runtime.h>
+#import <objc/message.h>
 @interface testViewController ()
 
 @end
@@ -18,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
   
-    [self demo7];
+    [self demo6];
     
 }
 
@@ -32,6 +34,12 @@
     [testModel addMethod:@selector(functionmyselfadded) methodImp:@selector(functionmyselfadded)];
     NSArray * arr = [testModel  fetchInstanceMethodList];
     NSLog(@"fetchInstanceMethodList---%@",arr);
+    //此处需要写动态加载才能调用 这个新调用的方法
+    //但是这样的添加操作无异于没有意义
+    //直接动态加载就可以实现
+//    testModel * model= [[testModel alloc]init];
+//     ((void (*)(id,SEL))objc_msgSend)(model,sel_registerName("functionmyselfadded"));
+    
 }
 -(void)demo5{
     NSArray * arr = [testModel  fetchProtocolList];
