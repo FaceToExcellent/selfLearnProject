@@ -12,6 +12,8 @@
 		602F531D1EF27BDB00B69450 /* UIButton+mycategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F531C1EF27BDB00B69450 /* UIButton+mycategory.m */; };
 		6032DF581F04994A00D399E1 /* UIButton+ClickBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032DF571F04994A00D399E1 /* UIButton+ClickBlock.m */; };
 		6032DF5B1F049C3F00D399E1 /* UIButton+mystate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032DF5A1F049C3F00D399E1 /* UIButton+mystate.m */; };
+		6032DF5E1F049F5900D399E1 /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032DF5D1F049F5900D399E1 /* Bird.m */; };
+		6032DF611F049F6E00D399E1 /* Monkey.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032DF601F049F6E00D399E1 /* Monkey.m */; };
 		603E32861F03465800D6FD77 /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 603E32851F03465800D6FD77 /* testViewController.m */; };
 		603E32891F03467E00D6FD77 /* testModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 603E32881F03467E00D6FD77 /* testModel.m */; };
 		603E328C1F0347D800D6FD77 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 603E328B1F0347D800D6FD77 /* NSObject+Runtime.m */; };
@@ -88,6 +90,10 @@
 		6032DF571F04994A00D399E1 /* UIButton+ClickBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ClickBlock.m"; sourceTree = "<group>"; };
 		6032DF591F049C3F00D399E1 /* UIButton+mystate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+mystate.h"; sourceTree = "<group>"; };
 		6032DF5A1F049C3F00D399E1 /* UIButton+mystate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+mystate.m"; sourceTree = "<group>"; };
+		6032DF5C1F049F5900D399E1 /* Bird.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bird.h; sourceTree = "<group>"; };
+		6032DF5D1F049F5900D399E1 /* Bird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
+		6032DF5F1F049F6E00D399E1 /* Monkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monkey.h; sourceTree = "<group>"; };
+		6032DF601F049F6E00D399E1 /* Monkey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Monkey.m; sourceTree = "<group>"; };
 		603E32841F03465700D6FD77 /* testViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testViewController.h; sourceTree = "<group>"; };
 		603E32851F03465800D6FD77 /* testViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testViewController.m; sourceTree = "<group>"; };
 		603E32871F03467E00D6FD77 /* testModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testModel.h; sourceTree = "<group>"; };
@@ -296,6 +302,10 @@
 		603E329E1F03B18000D6FD77 /* 动态方法加载 */ = {
 			isa = PBXGroup;
 			children = (
+				6032DF5C1F049F5900D399E1 /* Bird.h */,
+				6032DF5D1F049F5900D399E1 /* Bird.m */,
+				6032DF5F1F049F6E00D399E1 /* Monkey.h */,
+				6032DF601F049F6E00D399E1 /* Monkey.m */,
 			);
 			path = "动态方法加载";
 			sourceTree = "<group>";
@@ -787,6 +797,7 @@
 				604073961EEFDDD800815DFC /* Person.m in Sources */,
 				6040738B1EEFDD9000815DFC /* ThirdViewController.m in Sources */,
 				604073CA1EEFE0C900815DFC /* LoginViewModel.m in Sources */,
+				6032DF5E1F049F5900D399E1 /* Bird.m in Sources */,
 				602F531D1EF27BDB00B69450 /* UIButton+mycategory.m in Sources */,
 				604073951EEFDDD800815DFC /* RuntimetestViewController.m in Sources */,
 				604073771EEFDC8900815DFC /* backViewController.m in Sources */,
@@ -794,6 +805,7 @@
 				604073B21EEFDE5100815DFC /* AVLearn2ViewController.m in Sources */,
 				603E328C1F0347D800D6FD77 /* NSObject+Runtime.m in Sources */,
 				604073A11EEFDDEA00815DFC /* runlooponeViewController.m in Sources */,
+				6032DF611F049F6E00D399E1 /* Monkey.m in Sources */,
 				604073AC1EEFDE4500815DFC /* socketlearnserviceViewController.m in Sources */,
 				604073881EEFDD8A00815DFC /* SecondViewController.m in Sources */,
 				604073CF1EEFE0D400815DFC /* RAClearnViewController.m in Sources */,

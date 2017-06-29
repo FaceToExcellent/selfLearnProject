@@ -10,6 +10,7 @@
 #import "NSObject+KeyValues.h"
 #import "UIButton+ClickBlock.h"
 #import "UIButton+mystate.h"
+#import "Monkey.h"
 
 #import "usetestViewController.h"
 #import <objc/runtime.h>
@@ -43,9 +44,12 @@
 //    [self demo2];
 //     [self demo3];
     
-    [self demo5];
+    [self demo6];
 }
-
+-(void)demo6{
+    Monkey *monkey = [[Monkey alloc]init];
+    ((void (*)(id,SEL))objc_msgSend)(monkey,sel_registerName("fly"));
+}
 -(void)demo5{
     //这个功能不错
     UIButton *  button = [UIButton buttonWithType:UIButtonTypeCustom];
