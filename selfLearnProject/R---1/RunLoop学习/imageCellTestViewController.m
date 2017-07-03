@@ -36,7 +36,7 @@ typedef void(^RunLoopBlock)(void);
     
     
     
-    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-44) style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-49-64) style:UITableViewStylePlain];
     _tableView.delegate =self;
     _tableView.dataSource =self;
     [self.view addSubview:_tableView];
@@ -51,7 +51,7 @@ typedef void(^RunLoopBlock)(void);
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 600;
+    return 20;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {

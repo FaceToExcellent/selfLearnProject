@@ -26,6 +26,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self dictsettt];
+
+//    [self demo2];
+//     [self demo3];
+    
+    [self demo6];
+}
+-(void)dictsettt{
     dictionary = @{
                    @"name":@"doubao",
                    @"age":@4,
@@ -40,11 +48,6 @@
                                    },
                            }
                    };
-
-//    [self demo2];
-//     [self demo3];
-    
-    [self demo6];
 }
 -(void)demo6{
     Monkey *monkey = [[Monkey alloc]init];
