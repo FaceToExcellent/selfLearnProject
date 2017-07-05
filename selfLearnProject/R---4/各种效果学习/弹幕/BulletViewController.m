@@ -27,14 +27,14 @@
     UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [btn setTitle:@"start" forState:UIControlStateNormal];
-    btn.frame = CGRectMake(100, 100, 40, 40);
+    btn.frame = CGRectMake(100, 10, 40, 40);
     [btn addTarget:self action:@selector(clickButton) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     
     UIButton * stop = [UIButton buttonWithType:UIButtonTypeCustom];
     [stop setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [stop setTitle:@"stop" forState:UIControlStateNormal];
-    stop.frame = CGRectMake(160, 100, 40, 40);
+    stop.frame = CGRectMake(160, 10, 40, 40);
     [stop addTarget:self action:@selector(clickstop) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:stop];
 }
@@ -50,7 +50,7 @@
 
 -(void)addBulletView:(BulletView*)view{
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
-    view.frame = CGRectMake(width, 300+view.trajectory*40, CGRectGetWidth(view.bounds), CGRectGetHeight(view.bounds));
+    view.frame = CGRectMake(width, 100+view.trajectory*50, CGRectGetWidth(view.bounds), CGRectGetHeight(view.bounds));
     [self.view addSubview:view];
     [view startAnimation];
 }

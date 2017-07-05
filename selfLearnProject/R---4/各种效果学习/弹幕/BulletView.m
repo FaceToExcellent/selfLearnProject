@@ -8,9 +8,10 @@
 
 #import "BulletView.h"
 #define Padding 10
+#define PhotoHeight 30
 @interface BulletView()
 @property(nonatomic,strong)UILabel * lbComment;
-
+@property(nonatomic,strong)UIImageView * photoIgv;
 @end
 @implementation BulletView
 
@@ -18,14 +19,19 @@
 -(instancetype)initWithComment:(NSString *)comment{
     if (self = [super init]) {
         self.backgroundColor = [UIColor redColor];
+        self.layer.cornerRadius = 15;
         //计算弹幕的宽度
         NSDictionary * attr = @{NSFontAttributeName:[UIFont systemFontOfSize:14]};
         CGFloat width = [comment sizeWithAttributes:attr].width;
-        self.bounds = CGRectMake(0, 0, width+ 2*Padding, 30);
+        self.bounds = CGRectMake(0, 0, width+ 2*Padding+PhotoHeight, 30);
         self.lbComment.text = comment;
-        self.lbComment.frame = CGRectMake(Padding, 0, width, 30);
+        self.lbComment.frame = CGRectMake(Padding+PhotoHeight, 0, width, 30);
         
-        
+        self.photoIgv.frame = CGRectMake(-Padding, -Padding, PhotoHeight+Padding, PhotoHeight+Padding);
+        self.photoIgv.layer.cornerRadius = (PhotoHeight+Padding)/2;
+        self.photoIgv.layer.borderColor = [UIColor orangeColor].CGColor;
+        self.photoIgv.layer.borderWidth = 1;
+        self.photoIgv.image =[UIImage imageNamed:@"封面.jpg"];
         
     }
     return self;
@@ -67,6 +73,19 @@
     }];
     
 }
+
+-(UIImageView*)photoIgv
+{
+    if (!_photoIgv) {
+        _photoIgv = [UIImageView new];
+        _photoIgv.clipsToBounds =YES;
+        _photoIgv.contentMode =  UIViewContentModeScaleAspectFill;
+        [self addSubview:_photoIgv];
+        
+    }
+    return _photoIgv;
+}
+
 -(void)EnterScreem{
     if (self.moveStatusBlock) {
         self.moveStatusBlock(Enter);

@@ -58,8 +58,8 @@
 //初始化弹幕随机分配弹幕轨迹
 -(void)initBulletComment{
     
-    NSMutableArray * trajectorys =[NSMutableArray arrayWithArray:@[@(0),@(1),@(2)]];
-    for (int i =0; i<3; i++) {
+    NSMutableArray * trajectorys =[NSMutableArray arrayWithArray:@[@(0),@(1),@(2),@(3),@(4),@(5),@(6),@(7),@(8)]];
+    for (int i =0; i<9; i++) {
         if (self.bulletComments.count>0) {
             //通过随机数获取弹幕的轨迹
             NSInteger index = arc4random()%trajectorys.count;
@@ -155,7 +155,7 @@
 -(NSMutableArray *)datasouce
 {
     if(!_datasouce){
-        _datasouce = [NSMutableArray arrayWithArray:  @[@"弹幕111111",@"弹幕2",@"弹幕3333333333"]];
+        _datasouce = [NSMutableArray arrayWithArray:  @[@"弹幕111111",@"弹幕2",@"弹幕3333333333",@"弹幕44",@"弹幕55",@"弹幕666",@"弹幕777",@"弹幕888",@"弹幕999",@"_datasouce弹幕111111",@"_datasouce弹幕2",@"_datasouce弹幕3333333333",@"_datasouce弹幕44",@"_datasouce弹幕55",@"_datasouce弹幕666",@"_datasouce弹幕777",@"_datasouce弹幕888",@"_datasouce弹幕999",@"rray弹幕111111",@"rray弹幕2",@"rray弹幕3333333333",@"rray弹幕44",@"rray弹幕55",@"rray弹幕666",@"rray弹幕777",@"rray弹幕888",@"rray弹幕999",]];
         
     }
     return _datasouce;
