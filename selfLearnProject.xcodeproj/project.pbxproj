@@ -14,6 +14,9 @@
 		6032DF5B1F049C3F00D399E1 /* UIButton+mystate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032DF5A1F049C3F00D399E1 /* UIButton+mystate.m */; };
 		6032DF5E1F049F5900D399E1 /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032DF5D1F049F5900D399E1 /* Bird.m */; };
 		6032DF611F049F6E00D399E1 /* Monkey.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032DF601F049F6E00D399E1 /* Monkey.m */; };
+		603C20C31F0C870A00CFD573 /* BulletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 603C20C21F0C870A00CFD573 /* BulletViewController.m */; };
+		603C20C61F0C874600CFD573 /* BulletView.m in Sources */ = {isa = PBXBuildFile; fileRef = 603C20C51F0C874600CFD573 /* BulletView.m */; };
+		603C20C91F0C8BB500CFD573 /* BulletManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 603C20C81F0C8BB500CFD573 /* BulletManager.m */; };
 		603E32861F03465800D6FD77 /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 603E32851F03465800D6FD77 /* testViewController.m */; };
 		603E32891F03467E00D6FD77 /* testModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 603E32881F03467E00D6FD77 /* testModel.m */; };
 		603E328C1F0347D800D6FD77 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 603E328B1F0347D800D6FD77 /* NSObject+Runtime.m */; };
@@ -94,6 +97,12 @@
 		6032DF5D1F049F5900D399E1 /* Bird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
 		6032DF5F1F049F6E00D399E1 /* Monkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monkey.h; sourceTree = "<group>"; };
 		6032DF601F049F6E00D399E1 /* Monkey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Monkey.m; sourceTree = "<group>"; };
+		603C20C11F0C870A00CFD573 /* BulletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletViewController.h; sourceTree = "<group>"; };
+		603C20C21F0C870A00CFD573 /* BulletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulletViewController.m; sourceTree = "<group>"; };
+		603C20C41F0C874600CFD573 /* BulletView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletView.h; sourceTree = "<group>"; };
+		603C20C51F0C874600CFD573 /* BulletView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulletView.m; sourceTree = "<group>"; };
+		603C20C71F0C8BB500CFD573 /* BulletManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletManager.h; sourceTree = "<group>"; };
+		603C20C81F0C8BB500CFD573 /* BulletManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulletManager.m; sourceTree = "<group>"; };
 		603E32841F03465700D6FD77 /* testViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testViewController.h; sourceTree = "<group>"; };
 		603E32851F03465800D6FD77 /* testViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testViewController.m; sourceTree = "<group>"; };
 		603E32871F03467E00D6FD77 /* testModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testModel.h; sourceTree = "<group>"; };
@@ -232,6 +241,27 @@
 				602F531C1EF27BDB00B69450 /* UIButton+mycategory.m */,
 			);
 			path = "统计用户行为";
+			sourceTree = "<group>";
+		};
+		603C20BF1F0C861B00CFD573 /* 各种效果学习 */ = {
+			isa = PBXGroup;
+			children = (
+				603C20C01F0C86BF00CFD573 /* 弹幕 */,
+			);
+			path = "各种效果学习";
+			sourceTree = "<group>";
+		};
+		603C20C01F0C86BF00CFD573 /* 弹幕 */ = {
+			isa = PBXGroup;
+			children = (
+				603C20C11F0C870A00CFD573 /* BulletViewController.h */,
+				603C20C21F0C870A00CFD573 /* BulletViewController.m */,
+				603C20C41F0C874600CFD573 /* BulletView.h */,
+				603C20C51F0C874600CFD573 /* BulletView.m */,
+				603C20C71F0C8BB500CFD573 /* BulletManager.h */,
+				603C20C81F0C8BB500CFD573 /* BulletManager.m */,
+			);
+			path = "弹幕";
 			sourceTree = "<group>";
 		};
 		603E32831F03461500D6FD77 /* runtime功能运用 */ = {
@@ -439,6 +469,7 @@
 		604073821EEFDD7600815DFC /* R---4 */ = {
 			isa = PBXGroup;
 			children = (
+				603C20BF1F0C861B00CFD573 /* 各种效果学习 */,
 				6040738C1EEFDD9600815DFC /* FourthViewController.h */,
 				6040738D1EEFDD9600815DFC /* FourthViewController.m */,
 			);
@@ -790,7 +821,9 @@
 				603E329C1F03AA6B00D6FD77 /* NSObject+KeyValues.m in Sources */,
 				603EF3C91EF119F1001353BD /* refreshwithRACViewController.m in Sources */,
 				602F53191EF22FA200B69450 /* RACSequenceViewController.m in Sources */,
+				603C20C91F0C8BB500CFD573 /* BulletManager.m in Sources */,
 				6032DF5B1F049C3F00D399E1 /* UIButton+mystate.m in Sources */,
+				603C20C61F0C874600CFD573 /* BulletView.m in Sources */,
 				603E32901F038F3400D6FD77 /* usetestViewController.m in Sources */,
 				6040739F1EEFDDE900815DFC /* imageCellTestViewController.m in Sources */,
 				604073B51EEFDE5B00815DFC /* CAGradientLearnViewController.m in Sources */,
@@ -811,6 +844,7 @@
 				604073CF1EEFE0D400815DFC /* RAClearnViewController.m in Sources */,
 				60F5C0371EFCC2DA0080883C /* dayoneViewController.m in Sources */,
 				604073B81EEFDE6500815DFC /* biaozhixunhuanViewController.m in Sources */,
+				603C20C31F0C870A00CFD573 /* BulletViewController.m in Sources */,
 				603E32931F038F4E00D6FD77 /* cat.m in Sources */,
 				604073B11EEFDE5100815DFC /* AVFoudationlearnViewController.m in Sources */,
 				604073A01EEFDDEA00815DFC /* GCDtimerViewController.m in Sources */,
