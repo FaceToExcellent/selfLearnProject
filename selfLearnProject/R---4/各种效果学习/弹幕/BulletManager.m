@@ -16,15 +16,39 @@
 //存储弹幕View的数组变量
 @property(nonatomic,strong)NSMutableArray * bulletViews;
 
+@property BOOL  bStopAnimation;
+
 @end
 
 
 @implementation BulletManager
-
+-(instancetype)init
+{
+    if (self = [super init]) {
+        
+        self.bStopAnimation = YES;
+        
+    }
+    return self;
+}
 -(void)stop{
+    if (self.bStopAnimation) {
+        return;
+    }
+    self.bStopAnimation =YES;
+    [self.bulletViews enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        BulletView * view = obj;
+        [view stopAnimation];
+        view = nil;
+    }];
     
+    [self.bulletViews removeAllObjects];
 }
 -(void)start{
+    if (!self.bStopAnimation) {
+        return;
+    }
+    self.bStopAnimation =NO;
     [self.bulletComments removeAllObjects];
     [self.bulletComments addObjectsFromArray:self.datasouce];
     
@@ -55,22 +79,76 @@
 }
 -(void)creatBulletView:(NSString*)comment trajectory:(int)trajectory
 {
+    if (self.bStopAnimation) {
+        return;
+    }
     
     BulletView * view = [[BulletView alloc]initWithComment:comment];
     view.trajectory = trajectory;
     [self.bulletViews addObject:view];
     __weak typeof (view)weakview = view;
     __weak typeof (self)myself = self;
-    view.moveStatusBlock =^{
-       //移除屏幕后销毁弹幕
-        [weakview stopAnimation];
-        [myself.bulletViews removeObject:weakview];
+    view.moveStatusBlock =^(MoveStatus status){
+        if (self.bStopAnimation) {
+            return ;
+        }
+        switch (status) {
+            case Start:{
+               //弹幕开始进入屏幕 将View 加入弹幕管理中
+                [myself.bulletViews addObject:weakview];
+            }
+                
+                break;
+            case Enter:{
+                //弹幕完全飞入屏幕
+                //判断是否还有内容
+                NSString * comment = [myself nextComment];
+                if (comment) {
+                    [myself creatBulletView:comment trajectory:trajectory];
+                }
+                
+            }
+                
+                break;
+            case End:{
+                //弹幕完全飞出屏幕后
+                if ([myself.bulletViews containsObject:weakview]) {
+                    [weakview stopAnimation];
+                    [myself.bulletViews removeObject:weakview];
+                }
+                
+                if (myself.bulletViews.count == 0) {
+                    //屏幕上没有弹幕了
+                    self.bStopAnimation = YES;
+                    [myself start];
+                }
+                
+            }
+                
+                break;
+            default:
+                break;
+        }
+        
     };
     
     if (self.genertateViewBlock) {
         self.genertateViewBlock(view);
     }
     
+}
+
+-(NSString*)nextComment{
+    if (self.bulletComments.count ==0) {
+        return nil;
+    }
+    NSString * comment = [self.bulletComments firstObject];
+    if (comment) {
+        //removeObject 会把内容一样的做为一个个对象
+        [self.bulletComments removeObjectAtIndex:0];
+    }
+    
+    return comment;
 }
 
 

@@ -31,8 +31,17 @@
     [btn addTarget:self action:@selector(clickButton) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
     
+    UIButton * stop = [UIButton buttonWithType:UIButtonTypeCustom];
+    [stop setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [stop setTitle:@"stop" forState:UIControlStateNormal];
+    stop.frame = CGRectMake(160, 100, 40, 40);
+    [stop addTarget:self action:@selector(clickstop) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:stop];
 }
 
+-(void)clickstop{
+    [self.Manager stop];
+}
 -(void)clickButton{
     [self.Manager start];
     

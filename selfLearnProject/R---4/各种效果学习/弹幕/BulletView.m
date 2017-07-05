@@ -36,6 +36,22 @@
     CGFloat screemWidth = [UIScreen mainScreen].bounds.size.width;
     CGFloat duration =4.0f;
     CGFloat wholeWidth = screemWidth + CGRectGetWidth(self.bounds);
+    //弹幕开始
+    if (self.moveStatusBlock) {
+        self.moveStatusBlock(Start);
+    }
+    
+    CGFloat speed = wholeWidth/duration;
+    
+    CGFloat enterDuration =  CGRectGetWidth(self.bounds)/speed;
+    
+    [self performSelector:@selector(EnterScreem) withObject:nil afterDelay:enterDuration];
+    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(enterDuration*NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//       
+//    });
+    
+    
     __block CGRect frame = self.frame;
     [UIView animateWithDuration:duration delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
         frame.origin.x -= wholeWidth;
@@ -45,14 +61,20 @@
         
         [self removeFromSuperview];
         if (self.moveStatusBlock) {
-            self.moveStatusBlock();
+            self.moveStatusBlock(End);
         }
         
     }];
     
 }
+-(void)EnterScreem{
+    if (self.moveStatusBlock) {
+        self.moveStatusBlock(Enter);
+    }
+}
 //结束动画
 -(void)stopAnimation{
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
     [self.layer removeAllAnimations];
     [self removeFromSuperview];
     
