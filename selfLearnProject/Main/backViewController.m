@@ -16,10 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBar.translucent = NO;
     
+    /************************实现导航不透明，视图自动下移64*********************************/
+    self.navigationController.navigationBar.translucent = NO;
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"image"] forBarMetrics:UIBarMetricsDefault];
+    /**********************************************************/
+    
      [self setupLeftBarButton];
+    
+    
 }
 #pragma mark - 自定义返回按钮
 - (void)setupLeftBarButton {
