@@ -42,4 +42,10 @@
 -(dragonView*)jump4:(void(^)(float metter))block;
 -(dragonView*)play4:(void(^)(NSString* something))block;
 
+-(void(^)(float metter,void(^)(float metter)))jump5;
+-(void(^)(NSString *str,void(^)(NSString*str)))play5;
+
+-(dragonView*(^)(float metter,void(^)(float metter)))jump6;
+-(dragonView*(^)(NSString *str,void(^)(NSString*str)))play6;
+
 @end

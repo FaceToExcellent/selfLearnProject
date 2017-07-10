@@ -135,5 +135,54 @@
 }
 
 
+-(void(^)(float metter,void(^)(float metter)))jump5{
+    void(^jump5Block)(float metter,void(^)(float metter)) = ^(float metter,void(^dragonBLock)(float metter)){
+        if (dragonBLock) {
+            dragonBLock(metter);
+        }
+    };
+    return jump5Block;
+}
+-(void(^)(NSString *str,void(^)(NSString*str)))play5{
+//    void(^paly5Block)(NSString*str,void(^)(NSString*str)) = ^(NSString * str,void(^dragonBLock)(NSString*str)){
+//        if (dragonBLock) {
+//            dragonBLock(str);
+//        }
+//    };
+//    return paly5Block;
+    
+    return ^(NSString*str,void(^dragonBLock)(NSString*str)){
+        if (dragonBLock) {
+            dragonBLock(str);
+        }
+    };
+}
+-(dragonView*(^)(float metter,void(^)(float metter)))jump6{
+    dragonView*(^jump6Block)(float metter,void(^)(float metter)) = ^(float metter,void(^dragonBlick)(float metter)){
+        if (dragonBlick) {
+            dragonBlick(metter);
+        }
+        return self;
+    };
+    return jump6Block;
+    
+}
+-(dragonView*(^)(NSString *str,void(^)(NSString*str)))play6{
+    return ^(NSString *str,void(^dragonBlick)(NSString*str)){
+        if (dragonBlick) {
+            dragonBlick([NSString stringWithFormat:@"加一个漂亮的签名 %@",str]);
+        }
+        return self;
+    };
+}
+
+
+
+
+
+
+
+
+
 
 @end

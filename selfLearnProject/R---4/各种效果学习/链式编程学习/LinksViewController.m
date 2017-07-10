@@ -19,7 +19,24 @@
     self.view.backgroundColor = [UIColor whiteColor];
     _littleDragon = [[dragonView alloc]init];
     
-    [self demo9];
+    [self demo11];
+}
+
+-(void)demo11{
+    _littleDragon.jump6(100,^(float money){
+        NSLog(@"我有100块、、%.2f",money);
+    }).play6(@"JACK",^(NSString*name){
+        NSLog(@"%@",name);
+    });
+}
+-(void)demo10{
+    _littleDragon.jump5(123,^(float metter){
+         NSLog(@"我自己决定我跳%.2f米",metter);
+    });
+    
+    _littleDragon.play5(@"你给我100块",^(NSString*str){
+        NSLog(@"%@,你给我一个篮球",str);
+    });
 }
 -(void)demo9{
     [[_littleDragon jump4:^(float metter) {
