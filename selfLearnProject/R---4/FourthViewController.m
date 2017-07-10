@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.VCClassNameArray = @[@"BulletViewController"];
-    self.VCClasstitleArray = @[@"弹幕"];
+    self.VCClassNameArray = @[@"BulletViewController",@"LinksViewController"];
+    self.VCClasstitleArray = @[@"弹幕",@"链式编程学习"];
    
     
 }

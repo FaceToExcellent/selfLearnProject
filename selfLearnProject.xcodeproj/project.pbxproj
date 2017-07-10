@@ -14,6 +14,8 @@
 		6032DF5B1F049C3F00D399E1 /* UIButton+mystate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032DF5A1F049C3F00D399E1 /* UIButton+mystate.m */; };
 		6032DF5E1F049F5900D399E1 /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032DF5D1F049F5900D399E1 /* Bird.m */; };
 		6032DF611F049F6E00D399E1 /* Monkey.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032DF601F049F6E00D399E1 /* Monkey.m */; };
+		60336EDD1F131EF0006F8F4B /* LinksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60336EDC1F131EF0006F8F4B /* LinksViewController.m */; };
+		60336EE01F131F9C006F8F4B /* dragonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60336EDF1F131F9C006F8F4B /* dragonView.m */; };
 		603C20C31F0C870A00CFD573 /* BulletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 603C20C21F0C870A00CFD573 /* BulletViewController.m */; };
 		603C20C61F0C874600CFD573 /* BulletView.m in Sources */ = {isa = PBXBuildFile; fileRef = 603C20C51F0C874600CFD573 /* BulletView.m */; };
 		603C20C91F0C8BB500CFD573 /* BulletManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 603C20C81F0C8BB500CFD573 /* BulletManager.m */; };
@@ -97,6 +99,10 @@
 		6032DF5D1F049F5900D399E1 /* Bird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
 		6032DF5F1F049F6E00D399E1 /* Monkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monkey.h; sourceTree = "<group>"; };
 		6032DF601F049F6E00D399E1 /* Monkey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Monkey.m; sourceTree = "<group>"; };
+		60336EDB1F131EF0006F8F4B /* LinksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinksViewController.h; sourceTree = "<group>"; };
+		60336EDC1F131EF0006F8F4B /* LinksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinksViewController.m; sourceTree = "<group>"; };
+		60336EDE1F131F9C006F8F4B /* dragonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dragonView.h; sourceTree = "<group>"; };
+		60336EDF1F131F9C006F8F4B /* dragonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dragonView.m; sourceTree = "<group>"; };
 		603C20C11F0C870A00CFD573 /* BulletViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletViewController.h; sourceTree = "<group>"; };
 		603C20C21F0C870A00CFD573 /* BulletViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulletViewController.m; sourceTree = "<group>"; };
 		603C20C41F0C874600CFD573 /* BulletView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulletView.h; sourceTree = "<group>"; };
@@ -243,9 +249,21 @@
 			path = "统计用户行为";
 			sourceTree = "<group>";
 		};
+		60336EDA1F131ECC006F8F4B /* 链式编程学习 */ = {
+			isa = PBXGroup;
+			children = (
+				60336EDB1F131EF0006F8F4B /* LinksViewController.h */,
+				60336EDC1F131EF0006F8F4B /* LinksViewController.m */,
+				60336EDE1F131F9C006F8F4B /* dragonView.h */,
+				60336EDF1F131F9C006F8F4B /* dragonView.m */,
+			);
+			path = "链式编程学习";
+			sourceTree = "<group>";
+		};
 		603C20BF1F0C861B00CFD573 /* 各种效果学习 */ = {
 			isa = PBXGroup;
 			children = (
+				60336EDA1F131ECC006F8F4B /* 链式编程学习 */,
 				603C20C01F0C86BF00CFD573 /* 弹幕 */,
 			);
 			path = "各种效果学习";
@@ -846,6 +864,7 @@
 				604073B81EEFDE6500815DFC /* biaozhixunhuanViewController.m in Sources */,
 				603C20C31F0C870A00CFD573 /* BulletViewController.m in Sources */,
 				603E32931F038F4E00D6FD77 /* cat.m in Sources */,
+				60336EE01F131F9C006F8F4B /* dragonView.m in Sources */,
 				604073B11EEFDE5100815DFC /* AVFoudationlearnViewController.m in Sources */,
 				604073A01EEFDDEA00815DFC /* GCDtimerViewController.m in Sources */,
 				603E32891F03467E00D6FD77 /* testModel.m in Sources */,
@@ -854,6 +873,7 @@
 				602F53151EF225C900B69450 /* combineViewController.m in Sources */,
 				604073791EEFDC8900815DFC /* ROOTViewController.m in Sources */,
 				604073D01EEFE0D400815DFC /* RACAndMVVMlearnViewController.m in Sources */,
+				60336EDD1F131EF0006F8F4B /* LinksViewController.m in Sources */,
 				6040738E1EEFDD9600815DFC /* FourthViewController.m in Sources */,
 				604073781EEFDC8900815DFC /* myTableViewController.m in Sources */,
 				6040737A1EEFDC8900815DFC /* AppDelegate.m in Sources */,
