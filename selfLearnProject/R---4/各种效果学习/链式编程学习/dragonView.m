@@ -71,6 +71,8 @@
 
 }
 
+
+
 - (dragonView*(^)(NSString*food))eat6{
     dragonView*(^eat6Block)(NSString*food) = ^(NSString*food){
         NSLog(@"food6");
@@ -175,7 +177,6 @@
         return self;
     };
 }
-
 
 
 

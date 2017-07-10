@@ -42,6 +42,8 @@
 -(dragonView*)jump4:(void(^)(float metter))block;
 -(dragonView*)play4:(void(^)(NSString* something))block;
 
+
+
 -(void(^)(float metter,void(^)(float metter)))jump5;
 -(void(^)(NSString *str,void(^)(NSString*str)))play5;
 

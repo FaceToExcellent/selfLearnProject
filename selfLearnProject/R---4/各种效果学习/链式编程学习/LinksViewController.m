@@ -28,6 +28,11 @@
     }).play6(@"JACK",^(NSString*name){
         NSLog(@"%@",name);
     });
+//    
+  //  [_littleDragon play7:@"mystr"];
+    
+   
+    
 }
 -(void)demo10{
     _littleDragon.jump5(123,^(float metter){
