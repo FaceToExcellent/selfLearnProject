@@ -180,7 +180,17 @@
 
 
 
-
+-(dragonView*(^)(NSString* str1,NSString *str2,void(^)(NSString*str1,NSString*str2)))myfunctionn{
+    
+    return ^(NSString*str1,NSString *str2,void(^myBLock)(NSString*str1,NSString*str2)){
+        if (myBLock) {
+            myBLock([NSString stringWithFormat:@"第一个参数 %@",str1],[NSString stringWithFormat:@"第二个参数 %@",str2]);
+        }
+        
+        return self;
+    };
+    
+}
 
 
 

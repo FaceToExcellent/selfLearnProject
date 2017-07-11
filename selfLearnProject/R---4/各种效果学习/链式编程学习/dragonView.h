@@ -50,4 +50,7 @@
 -(dragonView*(^)(float metter,void(^)(float metter)))jump6;
 -(dragonView*(^)(NSString *str,void(^)(NSString*str)))play6;
 
+
+-(dragonView*(^)(NSString* str1,NSString *str2,void(^)(NSString*str1,NSString*str2)))myfunctionn;
+
 @end

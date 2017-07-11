@@ -19,16 +19,22 @@
     self.view.backgroundColor = [UIColor whiteColor];
     _littleDragon = [[dragonView alloc]init];
     
-    [self demo11];
+    [self demo12];
 }
-
+-(void)demo12{
+    _littleDragon.myfunctionn(@"we",@"me",^(NSString*str1,NSString*str2){
+        NSLog(@"%@,---,%@",str1,str2);
+    }).play6(@"myname",^(NSString*name){
+          NSLog(@"%@",name);
+    });
+}
 -(void)demo11{
     _littleDragon.jump6(100,^(float money){
         NSLog(@"我有100块、、%.2f",money);
     }).play6(@"JACK",^(NSString*name){
         NSLog(@"%@",name);
     });
-//    
+//
   //  [_littleDragon play7:@"mystr"];
     
    
@@ -84,11 +90,14 @@
     _littleDragon.run4();
 }
 -(void)demo3{
+   
     [[[_littleDragon eat3:@"apple"]eat3:@"banana"]run3:10000];
     
 }
 -(void)demo2{
-    [[_littleDragon eat2]run2];
+    
+  _littleDragon =  _littleDragon.eat2.run2;
+  //  [[_littleDragon eat2]run2];
 }
 -(void)demo1{
     
