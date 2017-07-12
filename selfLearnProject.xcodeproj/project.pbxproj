@@ -61,6 +61,7 @@
 		604073CA1EEFE0C900815DFC /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073C81EEFE0C900815DFC /* LoginViewModel.m */; };
 		604073CF1EEFE0D400815DFC /* RAClearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073CC1EEFE0D400815DFC /* RAClearnViewController.m */; };
 		604073D01EEFE0D400815DFC /* RACAndMVVMlearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073CE1EEFE0D400815DFC /* RACAndMVVMlearnViewController.m */; };
+		60412F5E1F15F84500618416 /* MathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60412F5D1F15F84500618416 /* MathViewController.m */; };
 		60F5C0371EFCC2DA0080883C /* dayoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F5C0361EFCC2DA0080883C /* dayoneViewController.m */; };
 		D3D897EA8D77F77D2326912C /* libPods-selfLearnProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E924996B0806E51B01591F /* libPods-selfLearnProject.a */; };
 /* End PBXBuildFile section */
@@ -191,6 +192,8 @@
 		604073CC1EEFE0D400815DFC /* RAClearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAClearnViewController.m; sourceTree = "<group>"; };
 		604073CD1EEFE0D400815DFC /* RACAndMVVMlearnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACAndMVVMlearnViewController.h; sourceTree = "<group>"; };
 		604073CE1EEFE0D400815DFC /* RACAndMVVMlearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACAndMVVMlearnViewController.m; sourceTree = "<group>"; };
+		60412F5C1F15F84500618416 /* MathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathViewController.h; sourceTree = "<group>"; };
+		60412F5D1F15F84500618416 /* MathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathViewController.m; sourceTree = "<group>"; };
 		60F5C0351EFCC2DA0080883C /* dayoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dayoneViewController.h; sourceTree = "<group>"; };
 		60F5C0361EFCC2DA0080883C /* dayoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dayoneViewController.m; sourceTree = "<group>"; };
 		7DB64691A841809C2A1379F1 /* Pods-selfLearnProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-selfLearnProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-selfLearnProject/Pods-selfLearnProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -263,6 +266,7 @@
 		603C20BF1F0C861B00CFD573 /* 各种效果学习 */ = {
 			isa = PBXGroup;
 			children = (
+				60412F5B1F15F7F300618416 /* 算法练习 */,
 				60336EDA1F131ECC006F8F4B /* 链式编程学习 */,
 				603C20C01F0C86BF00CFD573 /* 弹幕 */,
 			);
@@ -613,6 +617,15 @@
 			path = "信号处理";
 			sourceTree = "<group>";
 		};
+		60412F5B1F15F7F300618416 /* 算法练习 */ = {
+			isa = PBXGroup;
+			children = (
+				60412F5C1F15F84500618416 /* MathViewController.h */,
+				60412F5D1F15F84500618416 /* MathViewController.m */,
+			);
+			path = "算法练习";
+			sourceTree = "<group>";
+		};
 		60F5C0341EFCC2B20080883C /* 深井冰入院治疗 */ = {
 			isa = PBXGroup;
 			children = (
@@ -870,6 +883,7 @@
 				603E32891F03467E00D6FD77 /* testModel.m in Sources */,
 				604073C41EEFE0BD00815DFC /* RACSignalHandleViewController.m in Sources */,
 				604073C91EEFE0C900815DFC /* dog.m in Sources */,
+				60412F5E1F15F84500618416 /* MathViewController.m in Sources */,
 				602F53151EF225C900B69450 /* combineViewController.m in Sources */,
 				604073791EEFDC8900815DFC /* ROOTViewController.m in Sources */,
 				604073D01EEFE0D400815DFC /* RACAndMVVMlearnViewController.m in Sources */,
