@@ -10,6 +10,7 @@
 		602F53151EF225C900B69450 /* combineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F53141EF225C900B69450 /* combineViewController.m */; };
 		602F53191EF22FA200B69450 /* RACSequenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F53181EF22FA200B69450 /* RACSequenceViewController.m */; };
 		602F531D1EF27BDB00B69450 /* UIButton+mycategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F531C1EF27BDB00B69450 /* UIButton+mycategory.m */; };
+		603064801F1868D400CD5628 /* RACDisposableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6030647F1F1868D400CD5628 /* RACDisposableViewController.m */; };
 		6032DF581F04994A00D399E1 /* UIButton+ClickBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032DF571F04994A00D399E1 /* UIButton+ClickBlock.m */; };
 		6032DF5B1F049C3F00D399E1 /* UIButton+mystate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032DF5A1F049C3F00D399E1 /* UIButton+mystate.m */; };
 		6032DF5E1F049F5900D399E1 /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032DF5D1F049F5900D399E1 /* Bird.m */; };
@@ -92,6 +93,8 @@
 		602F53181EF22FA200B69450 /* RACSequenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSequenceViewController.m; sourceTree = "<group>"; };
 		602F531B1EF27BDB00B69450 /* UIButton+mycategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+mycategory.h"; sourceTree = "<group>"; };
 		602F531C1EF27BDB00B69450 /* UIButton+mycategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+mycategory.m"; sourceTree = "<group>"; };
+		6030647E1F1868D400CD5628 /* RACDisposableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACDisposableViewController.h; sourceTree = "<group>"; };
+		6030647F1F1868D400CD5628 /* RACDisposableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACDisposableViewController.m; sourceTree = "<group>"; };
 		6032DF561F04994A00D399E1 /* UIButton+ClickBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ClickBlock.h"; sourceTree = "<group>"; };
 		6032DF571F04994A00D399E1 /* UIButton+ClickBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ClickBlock.m"; sourceTree = "<group>"; };
 		6032DF591F049C3F00D399E1 /* UIButton+mystate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+mystate.h"; sourceTree = "<group>"; };
@@ -250,6 +253,15 @@
 				602F531C1EF27BDB00B69450 /* UIButton+mycategory.m */,
 			);
 			path = "统计用户行为";
+			sourceTree = "<group>";
+		};
+		6030647D1F1868AF00CD5628 /* RACDisposable */ = {
+			isa = PBXGroup;
+			children = (
+				6030647E1F1868D400CD5628 /* RACDisposableViewController.h */,
+				6030647F1F1868D400CD5628 /* RACDisposableViewController.m */,
+			);
+			path = RACDisposable;
 			sourceTree = "<group>";
 		};
 		60336EDA1F131ECC006F8F4B /* 链式编程学习 */ = {
@@ -576,6 +588,7 @@
 		604073BE1EEFDF3100815DFC /* RAC学习 */ = {
 			isa = PBXGroup;
 			children = (
+				6030647D1F1868AF00CD5628 /* RACDisposable */,
 				602F53161EF22F9000B69450 /* RACSequence */,
 				602F53121EF225AE00B69450 /* 合并操作 */,
 				603EF3C61EF119A0001353BD /* RAC实现上下拉加载 */,
@@ -889,6 +902,7 @@
 				604073D01EEFE0D400815DFC /* RACAndMVVMlearnViewController.m in Sources */,
 				60336EDD1F131EF0006F8F4B /* LinksViewController.m in Sources */,
 				6040738E1EEFDD9600815DFC /* FourthViewController.m in Sources */,
+				603064801F1868D400CD5628 /* RACDisposableViewController.m in Sources */,
 				604073781EEFDC8900815DFC /* myTableViewController.m in Sources */,
 				6040737A1EEFDC8900815DFC /* AppDelegate.m in Sources */,
 			);
