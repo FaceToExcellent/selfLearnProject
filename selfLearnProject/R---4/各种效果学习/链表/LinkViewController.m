@@ -9,7 +9,7 @@
 #import "LinkViewController.h"
 
 @interface LinkViewController ()
-
+@property(nonatomic)  myNode * nodelist;
 @end
 
 @implementation LinkViewController
@@ -23,13 +23,36 @@
     
     [data addObjectsFromArray:arr];
     
-    myNode * nodelist =[[myNode alloc]init];
-    [nodelist createLinkList:data];
-    [nodelist outputLinkList];
+     _nodelist =[[myNode alloc]init];
+    [_nodelist createLinkList:data];
+  //  [_nodelist outputLinkList];
+    
+
+    
+    [self demo3];
     
     
     
-    // Do any additional setup after loading the view.
+    
+}
+
+-(void)demo3{
+    myNode * reversenode = [_nodelist reverseList:_nodelist];
+    // NSLog(@"倒序链表%@",reversenode);
+    
+    [reversenode outputLinkList];
+}
+-(void)demo2{
+    
+   myNode * node =  [_nodelist findTheNodeAtindex:4];
+    NSLog(@"找到的是%@",node.data);
+    
+}
+-(void)demo1{
+    myNode * node = [[myNode alloc]init];
+    //node.data = [arr objectAtIndex:2];
+    node.data = @"node";
+    [_nodelist deletemynode:node];
 }
 
 - (void)didReceiveMemoryWarning {
