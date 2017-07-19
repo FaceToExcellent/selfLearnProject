@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60149DD61F1EF7B600CA8A8A /* LinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60149DD51F1EF7B600CA8A8A /* LinkViewController.m */; };
+		60149DD91F1EF7F000CA8A8A /* myNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 60149DD81F1EF7F000CA8A8A /* myNode.m */; };
 		602F53151EF225C900B69450 /* combineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F53141EF225C900B69450 /* combineViewController.m */; };
 		602F53191EF22FA200B69450 /* RACSequenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F53181EF22FA200B69450 /* RACSequenceViewController.m */; };
 		602F531D1EF27BDB00B69450 /* UIButton+mycategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F531C1EF27BDB00B69450 /* UIButton+mycategory.m */; };
@@ -87,6 +89,10 @@
 /* Begin PBXFileReference section */
 		35E924996B0806E51B01591F /* libPods-selfLearnProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-selfLearnProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A3B7CAE8E1973E99560CFD /* Pods-selfLearnProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-selfLearnProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-selfLearnProject/Pods-selfLearnProject.release.xcconfig"; sourceTree = "<group>"; };
+		60149DD41F1EF7B600CA8A8A /* LinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkViewController.h; sourceTree = "<group>"; };
+		60149DD51F1EF7B600CA8A8A /* LinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkViewController.m; sourceTree = "<group>"; };
+		60149DD71F1EF7F000CA8A8A /* myNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myNode.h; sourceTree = "<group>"; };
+		60149DD81F1EF7F000CA8A8A /* myNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myNode.m; sourceTree = "<group>"; };
 		602F53131EF225C900B69450 /* combineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = combineViewController.h; sourceTree = "<group>"; };
 		602F53141EF225C900B69450 /* combineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = combineViewController.m; sourceTree = "<group>"; };
 		602F53171EF22FA200B69450 /* RACSequenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACSequenceViewController.h; sourceTree = "<group>"; };
@@ -228,6 +234,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60149DD31F1EF7A200CA8A8A /* 链表 */ = {
+			isa = PBXGroup;
+			children = (
+				60149DD41F1EF7B600CA8A8A /* LinkViewController.h */,
+				60149DD51F1EF7B600CA8A8A /* LinkViewController.m */,
+				60149DD71F1EF7F000CA8A8A /* myNode.h */,
+				60149DD81F1EF7F000CA8A8A /* myNode.m */,
+			);
+			path = "链表";
+			sourceTree = "<group>";
+		};
 		602F53121EF225AE00B69450 /* 合并操作 */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +295,7 @@
 		603C20BF1F0C861B00CFD573 /* 各种效果学习 */ = {
 			isa = PBXGroup;
 			children = (
+				60149DD31F1EF7A200CA8A8A /* 链表 */,
 				60412F5B1F15F7F300618416 /* 算法练习 */,
 				60336EDA1F131ECC006F8F4B /* 链式编程学习 */,
 				603C20C01F0C86BF00CFD573 /* 弹幕 */,
@@ -856,6 +874,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60149DD61F1EF7B600CA8A8A /* LinkViewController.m in Sources */,
 				604073AB1EEFDE4500815DFC /* socketlearnViewController.m in Sources */,
 				604073A21EEFDDEA00815DFC /* runlooptwoViewController.m in Sources */,
 				6032DF581F04994A00D399E1 /* UIButton+ClickBlock.m in Sources */,
@@ -873,6 +892,7 @@
 				604073B51EEFDE5B00815DFC /* CAGradientLearnViewController.m in Sources */,
 				604073961EEFDDD800815DFC /* Person.m in Sources */,
 				6040738B1EEFDD9000815DFC /* ThirdViewController.m in Sources */,
+				60149DD91F1EF7F000CA8A8A /* myNode.m in Sources */,
 				604073CA1EEFE0C900815DFC /* LoginViewModel.m in Sources */,
 				6032DF5E1F049F5900D399E1 /* Bird.m in Sources */,
 				602F531D1EF27BDB00B69450 /* UIButton+mycategory.m in Sources */,

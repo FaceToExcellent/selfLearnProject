@@ -18,9 +18,87 @@
     [super viewDidLoad];
    // [self questionONE:100];
    
-    [self questionTWO:6 M:4];
+   // [self questionTWO:6 M:4];
+    
+   // [self questionThree:@"inputttttt"];
+    
+    [self questionFour];
 }
 
+
+-(void)questionFour{
+   // n个点，坐标x[i]从小到大，每个点可以选择Left或者Right的方向前进，速度v=1，求相遇的时间。
+
+    
+}
+
+-(void)questionThree:(NSString *)inputString{
+    //N个字符的字符串，找到最短的区间，包含所有字符串出现过的字符，输出区间长度
+     char  a[inputString.length];
+    char b[inputString.length];
+    for (int i = 0 ;i<inputString.length;i++) {
+        
+        char mychar  = [inputString characterAtIndex:i];
+        
+       // NSLog(@"%c",mychar);
+    
+        a[i] = mychar;
+        b[i] = mychar;
+    }
+    //去重
+    static int  n = 0;
+    for (int i=0; i<inputString.length;i++) {
+        for (int j=0; j<inputString.length; j++) {
+            if (b[i] == b[j]) {
+                if (i != j) {
+                    b[j] = 0;
+                }
+            }
+            
+        }
+        
+        NSLog(@"%c",b[i]);
+        
+        if (b[i]!= 0) {
+            n++;
+        }
+        
+    }
+    
+    NSLog(@"%d",n);
+    //确定范围
+    NSMutableArray * arr = [[NSMutableArray alloc]init];
+    for (int i=0; i<n; i++) {
+        
+        char  siglechar = b[i];
+        [arr addObject:[NSString stringWithCString:&siglechar encoding:4]];
+    }
+   // NSLog(@"%@",arr);
+    NSString * str =@"";
+    for (int i=0; i<arr.count; i++) {
+        str = [str stringByAppendingString:[arr objectAtIndex:i]];
+        
+    }
+    //方案 5 错误 ；；；；；；；；
+//    NSLog(@"%@",str);
+//    NSLog(@"%@",inputString);
+//    //只有写成这样才管用
+//    NSRange  range = [@"inputtttt" rangeOfString:@"input"];
+//    
+//    NSLog(@"%@", NSStringFromRange(range));
+   
+//方案 6 方法很笨 需要改进 是不是需要链表
+    
+    
+    //确定范围·1 最小范围，开始是字符的总数
+        /* 2.如果第一个空间不存在，则空间从左往右扩展1 ，一直到确定包含算有字符
+            3.包含所有字符，但是不是字符串所有长度的时候，确定抛弃剩余部分
+            4.如果包含字符就是所有的字符长度，则从左起第二个字符开始，直到确定范围，如果范围是所有长度-1，则继续右移动1*/
+   
+    
+    
+    
+}
 -(void)questionTWO:(NSInteger)N M:(NSInteger)M{
     //NxN的棋盘，每个格子可以放一个车，有M个车，问：每个车放完后，棋盘还剩多少格子是所有车攻击范围外？
     //情况 ：M 个车 的攻击范围内，不再出现车 车的同行和同列会遭到攻击
