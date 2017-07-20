@@ -113,12 +113,62 @@
     
   
 }
+
+-(myNode*)mergelist2:(myNode *)aHead node2:(myNode *)bHead{
+    if(aHead == nil)
+        return bHead;
+    if(bHead == nil)
+        return aHead;
+    myNode* mergeHead = nil;
+    if(aHead.data > bHead.data) {
+        mergeHead = bHead;
+        mergeHead.next = [self mergelist2:aHead node2:bHead.next];
+    }else {
+        mergeHead = aHead;
+        mergeHead.next = [self mergelist2:aHead.next node2:bHead];
+    }
+    return mergeHead;
+}
 -(myNode*)mergelist:(myNode*)node1 node2 :(myNode*)node2{
-    myNode * node  =_head;
+    if (node1 == nil) {
+        return node2;
+    }
+    if (node2 == nil) {
+        return node1;
+    }
+    myNode * mergeHead = [[myNode alloc]init];
+    myNode * current   = [[myNode alloc]init];
+    if (node1.data > node2.data) {
+        mergeHead = node2;
+        node2 = node2.next;
+    }else
+    {
+        mergeHead = node1;
+        node1 = node1.next;
+    }
     
+    current = mergeHead;
+    while (node1!= nil && node2 != nil) {
+        if (node1.data >node2.data) {
+            current.next = node2;
+            node2 = node2.next;
+        }else
+        {
+            current.next = node1;
+            node1 = node1.next;
+        }
+        
+        current = current.next;
+    }
     
-    
-    return node;
+    if (node1 == nil) {
+        current.next = node2;
+        
+    }else
+    {
+        current.next = node1;
+    }
+    return mergeHead;
     
 }
 @end

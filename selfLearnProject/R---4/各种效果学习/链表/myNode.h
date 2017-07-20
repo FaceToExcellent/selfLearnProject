@@ -25,8 +25,8 @@
 -(myNode*)findTheNodeAtindex:(NSInteger)K;
 //反转链表 有问题
 -(myNode*)reverseList:(myNode*)head;
-//合并链表
+//合并链表  合并出错 了 。。。。。
 -(myNode*)mergelist:(myNode*)node1 node2 :(myNode*)node2;
-
+-(myNode*)mergelist2:(myNode *)aHead node2:(myNode *)bHead;
 
 @end

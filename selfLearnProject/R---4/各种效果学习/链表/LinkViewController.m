@@ -29,10 +29,20 @@
     
 
     
-    [self demo3];
+   // [self demo3];
     
+    NSMutableArray * arr1 = [[NSMutableArray alloc]initWithArray:@[@1,@2,@4]];
+    myNode * node1 = [[myNode alloc]init];
+    [node1 createLinkList:arr1];
     
+  //  [node1 outputLinkList];
     
+    NSMutableArray * arr2 = [[NSMutableArray alloc]initWithArray:@[@3,@5,@7]];
+    myNode * node2 = [[myNode alloc]init];
+    [node2 createLinkList:arr2];
+    
+   // [node2 outputLinkList];
+
     
 }
 
