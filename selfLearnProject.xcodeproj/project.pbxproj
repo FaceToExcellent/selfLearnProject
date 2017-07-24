@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		601149061F258DA400C78EDB /* dispatch_onceOBJC.m in Sources */ = {isa = PBXBuildFile; fileRef = 601149051F258DA400C78EDB /* dispatch_onceOBJC.m */; };
 		60149DD61F1EF7B600CA8A8A /* LinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60149DD51F1EF7B600CA8A8A /* LinkViewController.m */; };
 		60149DD91F1EF7F000CA8A8A /* myNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 60149DD81F1EF7F000CA8A8A /* myNode.m */; };
 		602F53151EF225C900B69450 /* combineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F53141EF225C900B69450 /* combineViewController.m */; };
@@ -89,6 +90,8 @@
 /* Begin PBXFileReference section */
 		35E924996B0806E51B01591F /* libPods-selfLearnProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-selfLearnProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A3B7CAE8E1973E99560CFD /* Pods-selfLearnProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-selfLearnProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-selfLearnProject/Pods-selfLearnProject.release.xcconfig"; sourceTree = "<group>"; };
+		601149041F258DA400C78EDB /* dispatch_onceOBJC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dispatch_onceOBJC.h; sourceTree = "<group>"; };
+		601149051F258DA400C78EDB /* dispatch_onceOBJC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dispatch_onceOBJC.m; sourceTree = "<group>"; };
 		60149DD41F1EF7B600CA8A8A /* LinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkViewController.h; sourceTree = "<group>"; };
 		60149DD51F1EF7B600CA8A8A /* LinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkViewController.m; sourceTree = "<group>"; };
 		60149DD71F1EF7F000CA8A8A /* myNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myNode.h; sourceTree = "<group>"; };
@@ -651,6 +654,8 @@
 		60412F5B1F15F7F300618416 /* 算法练习 */ = {
 			isa = PBXGroup;
 			children = (
+				601149041F258DA400C78EDB /* dispatch_onceOBJC.h */,
+				601149051F258DA400C78EDB /* dispatch_onceOBJC.m */,
 				60412F5C1F15F84500618416 /* MathViewController.h */,
 				60412F5D1F15F84500618416 /* MathViewController.m */,
 			);
@@ -894,6 +899,7 @@
 				6040738B1EEFDD9000815DFC /* ThirdViewController.m in Sources */,
 				60149DD91F1EF7F000CA8A8A /* myNode.m in Sources */,
 				604073CA1EEFE0C900815DFC /* LoginViewModel.m in Sources */,
+				601149061F258DA400C78EDB /* dispatch_onceOBJC.m in Sources */,
 				6032DF5E1F049F5900D399E1 /* Bird.m in Sources */,
 				602F531D1EF27BDB00B69450 /* UIButton+mycategory.m in Sources */,
 				604073951EEFDDD800815DFC /* RuntimetestViewController.m in Sources */,

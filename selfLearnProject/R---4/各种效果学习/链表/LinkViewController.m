@@ -46,12 +46,7 @@
     
 }
 
--(void)demo3{
-    myNode * reversenode = [_nodelist reverseList:_nodelist];
-    // NSLog(@"倒序链表%@",reversenode);
-    
-    [reversenode outputLinkList];
-}
+
 -(void)demo2{
     
    myNode * node =  [_nodelist findTheNodeAtindex:4];
