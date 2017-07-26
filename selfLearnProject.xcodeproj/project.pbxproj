@@ -143,7 +143,7 @@
 		603EF3C81EF119F1001353BD /* refreshwithRACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = refreshwithRACViewController.m; sourceTree = "<group>"; };
 		604073351EEFDBAA00815DFC /* selfLearnProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = selfLearnProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		604073391EEFDBAA00815DFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		604073441EEFDBAA00815DFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		604073441EEFDBAA00815DFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		604073491EEFDBAA00815DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6040734E1EEFDBAB00815DFC /* selfLearnProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = selfLearnProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		604073521EEFDBAB00815DFC /* selfLearnProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = selfLearnProjectTests.m; sourceTree = "<group>"; };
@@ -454,7 +454,6 @@
 				604073741EEFDC8900815DFC /* Default-568h@2x.png */,
 				604073751EEFDC8900815DFC /* Default-667h@2x.png */,
 				604073761EEFDC8900815DFC /* Default-736h@3x.png */,
-				604073441EEFDBAA00815DFC /* Assets.xcassets */,
 				604073391EEFDBAA00815DFC /* main.m */,
 				6040737E1EEFDCD100815DFC /* PrefixHeader.pch */,
 			);
@@ -606,6 +605,7 @@
 		604073B91EEFDE8000815DFC /* 素材 */ = {
 			isa = PBXGroup;
 			children = (
+				604073441EEFDBAA00815DFC /* Assets.xcassets */,
 				604073BA1EEFDE8D00815DFC /* testimage.jpg */,
 				604073BB1EEFDE8D00815DFC /* 凉凉.mp4 */,
 			);
