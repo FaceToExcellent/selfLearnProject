@@ -21,7 +21,7 @@
     
     
   
-   
+    
     _tableView =[[UITableView alloc]init];
     _tableView.delegate =self;
     _tableView.dataSource =self;
@@ -57,9 +57,12 @@
     Class  vcClass =NSClassFromString(str);
    // NSLog(@"%@",vcClass);
     if ([vcClass isSubclassOfClass:[UIViewController class]]) {
-        id vc = [[vcClass alloc]init];
+        
+       self.hidesBottomBarWhenPushed =YES;
+        id  vc = [[vcClass alloc]init];
       //  NSLog(@"%@",vc);
         [self.navigationController pushViewController:vc animated:YES];
+        self.hidesBottomBarWhenPushed =NO;
     }
     
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		600E40FB1F286E3D00A639CC /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 600E40FA1F286E3D00A639CC /* TaskViewController.m */; };
 		601149061F258DA400C78EDB /* dispatch_onceOBJC.m in Sources */ = {isa = PBXBuildFile; fileRef = 601149051F258DA400C78EDB /* dispatch_onceOBJC.m */; };
 		60141BBA1F26E36E00128641 /* ProducerConsumerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60141BB91F26E36E00128641 /* ProducerConsumerViewController.m */; };
 		60149DD61F1EF7B600CA8A8A /* LinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60149DD51F1EF7B600CA8A8A /* LinkViewController.m */; };
@@ -47,8 +48,6 @@
 		604073881EEFDD8A00815DFC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073871EEFDD8A00815DFC /* SecondViewController.m */; };
 		6040738B1EEFDD9000815DFC /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6040738A1EEFDD9000815DFC /* ThirdViewController.m */; };
 		6040738E1EEFDD9600815DFC /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6040738D1EEFDD9600815DFC /* FourthViewController.m */; };
-		604073951EEFDDD800815DFC /* RuntimetestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073921EEFDDD800815DFC /* RuntimetestViewController.m */; };
-		604073961EEFDDD800815DFC /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073941EEFDDD800815DFC /* Person.m */; };
 		6040739F1EEFDDE900815DFC /* imageCellTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073981EEFDDE900815DFC /* imageCellTestViewController.m */; };
 		604073A01EEFDDEA00815DFC /* GCDtimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6040739A1EEFDDE900815DFC /* GCDtimerViewController.m */; };
 		604073A11EEFDDEA00815DFC /* runlooponeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6040739C1EEFDDE900815DFC /* runlooponeViewController.m */; };
@@ -67,7 +66,6 @@
 		604073CF1EEFE0D400815DFC /* RAClearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073CC1EEFE0D400815DFC /* RAClearnViewController.m */; };
 		604073D01EEFE0D400815DFC /* RACAndMVVMlearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073CE1EEFE0D400815DFC /* RACAndMVVMlearnViewController.m */; };
 		60412F5E1F15F84500618416 /* MathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60412F5D1F15F84500618416 /* MathViewController.m */; };
-		60F5C0371EFCC2DA0080883C /* dayoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F5C0361EFCC2DA0080883C /* dayoneViewController.m */; };
 		D3D897EA8D77F77D2326912C /* libPods-selfLearnProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E924996B0806E51B01591F /* libPods-selfLearnProject.a */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +89,8 @@
 /* Begin PBXFileReference section */
 		35E924996B0806E51B01591F /* libPods-selfLearnProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-selfLearnProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A3B7CAE8E1973E99560CFD /* Pods-selfLearnProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-selfLearnProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-selfLearnProject/Pods-selfLearnProject.release.xcconfig"; sourceTree = "<group>"; };
+		600E40F91F286E3D00A639CC /* TaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskViewController.h; sourceTree = "<group>"; };
+		600E40FA1F286E3D00A639CC /* TaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskViewController.m; sourceTree = "<group>"; };
 		601149041F258DA400C78EDB /* dispatch_onceOBJC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dispatch_onceOBJC.h; sourceTree = "<group>"; };
 		601149051F258DA400C78EDB /* dispatch_onceOBJC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dispatch_onceOBJC.m; sourceTree = "<group>"; };
 		60141BB81F26E36E00128641 /* ProducerConsumerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProducerConsumerViewController.h; sourceTree = "<group>"; };
@@ -171,10 +171,6 @@
 		6040738A1EEFDD9000815DFC /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		6040738C1EEFDD9600815DFC /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
 		6040738D1EEFDD9600815DFC /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
-		604073911EEFDDD800815DFC /* RuntimetestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RuntimetestViewController.h; path = ../RuntimetestViewController.h; sourceTree = "<group>"; };
-		604073921EEFDDD800815DFC /* RuntimetestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RuntimetestViewController.m; path = ../RuntimetestViewController.m; sourceTree = "<group>"; };
-		604073931EEFDDD800815DFC /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = ../Person.h; sourceTree = "<group>"; };
-		604073941EEFDDD800815DFC /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = ../Person.m; sourceTree = "<group>"; };
 		604073971EEFDDE900815DFC /* imageCellTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imageCellTestViewController.h; sourceTree = "<group>"; };
 		604073981EEFDDE900815DFC /* imageCellTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = imageCellTestViewController.m; sourceTree = "<group>"; };
 		604073991EEFDDE900815DFC /* GCDtimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDtimerViewController.h; sourceTree = "<group>"; };
@@ -209,8 +205,6 @@
 		604073CE1EEFE0D400815DFC /* RACAndMVVMlearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACAndMVVMlearnViewController.m; sourceTree = "<group>"; };
 		60412F5C1F15F84500618416 /* MathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathViewController.h; sourceTree = "<group>"; };
 		60412F5D1F15F84500618416 /* MathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathViewController.m; sourceTree = "<group>"; };
-		60F5C0351EFCC2DA0080883C /* dayoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dayoneViewController.h; sourceTree = "<group>"; };
-		60F5C0361EFCC2DA0080883C /* dayoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dayoneViewController.m; sourceTree = "<group>"; };
 		7DB64691A841809C2A1379F1 /* Pods-selfLearnProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-selfLearnProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-selfLearnProject/Pods-selfLearnProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -240,6 +234,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		600E40F81F286E1A00A639CC /* 仿iOS9任务管理器 */ = {
+			isa = PBXGroup;
+			children = (
+				600E40F91F286E3D00A639CC /* TaskViewController.h */,
+				600E40FA1F286E3D00A639CC /* TaskViewController.m */,
+			);
+			path = "仿iOS9任务管理器";
+			sourceTree = "<group>";
+		};
 		60149DD31F1EF7A200CA8A8A /* 链表 */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,6 +304,7 @@
 		603C20BF1F0C861B00CFD573 /* 各种效果学习 */ = {
 			isa = PBXGroup;
 			children = (
+				600E40F81F286E1A00A639CC /* 仿iOS9任务管理器 */,
 				60149DD31F1EF7A200CA8A8A /* 链表 */,
 				60412F5B1F15F7F300618416 /* 算法练习 */,
 				60336EDA1F131ECC006F8F4B /* 链式编程学习 */,
@@ -539,7 +543,6 @@
 			children = (
 				603E328D1F038F1400D6FD77 /* runtime几种基础用法 */,
 				603E32831F03461500D6FD77 /* runtime功能运用 */,
-				60F5C0341EFCC2B20080883C /* 深井冰入院治疗 */,
 				602F531A1EF27B2400B69450 /* 统计用户行为 */,
 			);
 			path = "Runtime学习";
@@ -665,19 +668,6 @@
 				60141BB91F26E36E00128641 /* ProducerConsumerViewController.m */,
 			);
 			path = "算法练习";
-			sourceTree = "<group>";
-		};
-		60F5C0341EFCC2B20080883C /* 深井冰入院治疗 */ = {
-			isa = PBXGroup;
-			children = (
-				604073911EEFDDD800815DFC /* RuntimetestViewController.h */,
-				604073921EEFDDD800815DFC /* RuntimetestViewController.m */,
-				604073931EEFDDD800815DFC /* Person.h */,
-				604073941EEFDDD800815DFC /* Person.m */,
-				60F5C0351EFCC2DA0080883C /* dayoneViewController.h */,
-				60F5C0361EFCC2DA0080883C /* dayoneViewController.m */,
-			);
-			path = "深井冰入院治疗";
 			sourceTree = "<group>";
 		};
 		719F122317983DC4BFDBDF09 /* Frameworks */ = {
@@ -897,10 +887,10 @@
 				603C20C91F0C8BB500CFD573 /* BulletManager.m in Sources */,
 				6032DF5B1F049C3F00D399E1 /* UIButton+mystate.m in Sources */,
 				603C20C61F0C874600CFD573 /* BulletView.m in Sources */,
+				600E40FB1F286E3D00A639CC /* TaskViewController.m in Sources */,
 				603E32901F038F3400D6FD77 /* usetestViewController.m in Sources */,
 				6040739F1EEFDDE900815DFC /* imageCellTestViewController.m in Sources */,
 				604073B51EEFDE5B00815DFC /* CAGradientLearnViewController.m in Sources */,
-				604073961EEFDDD800815DFC /* Person.m in Sources */,
 				6040738B1EEFDD9000815DFC /* ThirdViewController.m in Sources */,
 				60149DD91F1EF7F000CA8A8A /* myNode.m in Sources */,
 				604073CA1EEFE0C900815DFC /* LoginViewModel.m in Sources */,
@@ -908,7 +898,6 @@
 				6032DF5E1F049F5900D399E1 /* Bird.m in Sources */,
 				602F531D1EF27BDB00B69450 /* UIButton+mycategory.m in Sources */,
 				60141BBA1F26E36E00128641 /* ProducerConsumerViewController.m in Sources */,
-				604073951EEFDDD800815DFC /* RuntimetestViewController.m in Sources */,
 				604073771EEFDC8900815DFC /* backViewController.m in Sources */,
 				603E32861F03465800D6FD77 /* testViewController.m in Sources */,
 				604073B21EEFDE5100815DFC /* AVLearn2ViewController.m in Sources */,
@@ -918,7 +907,6 @@
 				604073AC1EEFDE4500815DFC /* socketlearnserviceViewController.m in Sources */,
 				604073881EEFDD8A00815DFC /* SecondViewController.m in Sources */,
 				604073CF1EEFE0D400815DFC /* RAClearnViewController.m in Sources */,
-				60F5C0371EFCC2DA0080883C /* dayoneViewController.m in Sources */,
 				604073B81EEFDE6500815DFC /* biaozhixunhuanViewController.m in Sources */,
 				603C20C31F0C870A00CFD573 /* BulletViewController.m in Sources */,
 				603E32931F038F4E00D6FD77 /* cat.m in Sources */,

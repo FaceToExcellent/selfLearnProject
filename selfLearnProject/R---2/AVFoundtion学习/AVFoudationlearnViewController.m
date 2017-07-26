@@ -20,7 +20,7 @@
     AVSpeechSynthesizer * synthesizer = [[AVSpeechSynthesizer alloc]init];
     //舌头
     _str = [[NSString alloc]init];
-    _str =@"这么一个成熟的框架早已有无数人对其架构进行过透彻的分析，老司机说了也是一样的，但作为程序员最快的成长就是不断地重造轮子。当然你造轮子不一定是要替代原来的，只是扩展一种思路";
+    _str =@"这么一个成熟的框架早已有无数人对其架构进行过透彻的分析,但作为程序员最快的成长就是不断地重造轮子。当然你造轮子不一定是要替代原来的，只是扩展一种思路";
     AVSpeechUtterance * utterance =[[AVSpeechUtterance alloc]initWithString:_str];
     //如果要识别中文 要设置语言 zh-CN en-US
     NSArray *vioces = @[[AVSpeechSynthesisVoice voiceWithLanguage:@"zh-CN"],[AVSpeechSynthesisVoice voiceWithLanguage:@"en-US"]];

@@ -3,5 +3,5 @@
 
 target 'selfLearnProject' do
  pod 'ReactiveObjC', '~> 3.0.0'
-
+ pod 'iCarousel', '~> 1.8.2'
 end
