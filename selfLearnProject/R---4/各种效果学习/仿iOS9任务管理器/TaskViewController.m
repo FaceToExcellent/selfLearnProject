@@ -55,7 +55,6 @@
         UIImage * taskImage = [UIImage imageNamed:[NSString stringWithFormat:@"%ld",index]];
         
         [imageView setImage: taskImage];
-        
         UILabel * label = [[UILabel alloc]initWithFrame:taskView.frame];
         [label setText:[@(index) stringValue]];
         [label setFont:[UIFont systemFontOfSize:50]];

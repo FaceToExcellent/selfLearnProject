@@ -10,6 +10,7 @@
 		600E40FB1F286E3D00A639CC /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 600E40FA1F286E3D00A639CC /* TaskViewController.m */; };
 		601149061F258DA400C78EDB /* dispatch_onceOBJC.m in Sources */ = {isa = PBXBuildFile; fileRef = 601149051F258DA400C78EDB /* dispatch_onceOBJC.m */; };
 		60141BBA1F26E36E00128641 /* ProducerConsumerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60141BB91F26E36E00128641 /* ProducerConsumerViewController.m */; };
+		6014699B1F38056900C54588 /* SortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6014699A1F38056900C54588 /* SortViewController.m */; };
 		60149DD61F1EF7B600CA8A8A /* LinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60149DD51F1EF7B600CA8A8A /* LinkViewController.m */; };
 		60149DD91F1EF7F000CA8A8A /* myNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 60149DD81F1EF7F000CA8A8A /* myNode.m */; };
 		602F53151EF225C900B69450 /* combineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F53141EF225C900B69450 /* combineViewController.m */; };
@@ -95,6 +96,8 @@
 		601149051F258DA400C78EDB /* dispatch_onceOBJC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dispatch_onceOBJC.m; sourceTree = "<group>"; };
 		60141BB81F26E36E00128641 /* ProducerConsumerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProducerConsumerViewController.h; sourceTree = "<group>"; };
 		60141BB91F26E36E00128641 /* ProducerConsumerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProducerConsumerViewController.m; sourceTree = "<group>"; };
+		601469991F38056900C54588 /* SortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortViewController.h; sourceTree = "<group>"; };
+		6014699A1F38056900C54588 /* SortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortViewController.m; sourceTree = "<group>"; };
 		60149DD41F1EF7B600CA8A8A /* LinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkViewController.h; sourceTree = "<group>"; };
 		60149DD51F1EF7B600CA8A8A /* LinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkViewController.m; sourceTree = "<group>"; };
 		60149DD71F1EF7F000CA8A8A /* myNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myNode.h; sourceTree = "<group>"; };
@@ -254,6 +257,16 @@
 			path = "链表";
 			sourceTree = "<group>";
 		};
+		6017837C1F2B146E00DF1A1F /* 各种排序算法学习 */ = {
+			isa = PBXGroup;
+			children = (
+				601469991F38056900C54588 /* SortViewController.h */,
+				6014699A1F38056900C54588 /* SortViewController.m */,
+			);
+			name = "各种排序算法学习";
+			path = "未命名文件夹";
+			sourceTree = "<group>";
+		};
 		602F53121EF225AE00B69450 /* 合并操作 */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +317,7 @@
 		603C20BF1F0C861B00CFD573 /* 各种效果学习 */ = {
 			isa = PBXGroup;
 			children = (
+				6017837C1F2B146E00DF1A1F /* 各种排序算法学习 */,
 				600E40F81F286E1A00A639CC /* 仿iOS9任务管理器 */,
 				60149DD31F1EF7A200CA8A8A /* 链表 */,
 				60412F5B1F15F7F300618416 /* 算法练习 */,
@@ -908,6 +922,7 @@
 				604073881EEFDD8A00815DFC /* SecondViewController.m in Sources */,
 				604073CF1EEFE0D400815DFC /* RAClearnViewController.m in Sources */,
 				604073B81EEFDE6500815DFC /* biaozhixunhuanViewController.m in Sources */,
+				6014699B1F38056900C54588 /* SortViewController.m in Sources */,
 				603C20C31F0C870A00CFD573 /* BulletViewController.m in Sources */,
 				603E32931F038F4E00D6FD77 /* cat.m in Sources */,
 				60336EE01F131F9C006F8F4B /* dragonView.m in Sources */,
