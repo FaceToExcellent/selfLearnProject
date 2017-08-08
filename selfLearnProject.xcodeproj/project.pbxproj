@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		600778D61F395D6F00574809 /* testforWifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 600778D51F395D6F00574809 /* testforWifeViewController.m */; };
 		600E40FB1F286E3D00A639CC /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 600E40FA1F286E3D00A639CC /* TaskViewController.m */; };
 		601149061F258DA400C78EDB /* dispatch_onceOBJC.m in Sources */ = {isa = PBXBuildFile; fileRef = 601149051F258DA400C78EDB /* dispatch_onceOBJC.m */; };
 		60141BBA1F26E36E00128641 /* ProducerConsumerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60141BB91F26E36E00128641 /* ProducerConsumerViewController.m */; };
@@ -90,6 +91,8 @@
 /* Begin PBXFileReference section */
 		35E924996B0806E51B01591F /* libPods-selfLearnProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-selfLearnProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A3B7CAE8E1973E99560CFD /* Pods-selfLearnProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-selfLearnProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-selfLearnProject/Pods-selfLearnProject.release.xcconfig"; sourceTree = "<group>"; };
+		600778D41F395D6F00574809 /* testforWifeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testforWifeViewController.h; sourceTree = "<group>"; };
+		600778D51F395D6F00574809 /* testforWifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testforWifeViewController.m; sourceTree = "<group>"; };
 		600E40F91F286E3D00A639CC /* TaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskViewController.h; sourceTree = "<group>"; };
 		600E40FA1F286E3D00A639CC /* TaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskViewController.m; sourceTree = "<group>"; };
 		601149041F258DA400C78EDB /* dispatch_onceOBJC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dispatch_onceOBJC.h; sourceTree = "<group>"; };
@@ -612,6 +615,8 @@
 			children = (
 				604073B61EEFDE6500815DFC /* biaozhixunhuanViewController.h */,
 				604073B71EEFDE6500815DFC /* biaozhixunhuanViewController.m */,
+				600778D41F395D6F00574809 /* testforWifeViewController.h */,
+				600778D51F395D6F00574809 /* testforWifeViewController.m */,
 			);
 			path = "自动化测试理论循环";
 			sourceTree = "<group>";
@@ -936,6 +941,7 @@
 				604073791EEFDC8900815DFC /* ROOTViewController.m in Sources */,
 				604073D01EEFE0D400815DFC /* RACAndMVVMlearnViewController.m in Sources */,
 				60336EDD1F131EF0006F8F4B /* LinksViewController.m in Sources */,
+				600778D61F395D6F00574809 /* testforWifeViewController.m in Sources */,
 				6040738E1EEFDD9600815DFC /* FourthViewController.m in Sources */,
 				603064801F1868D400CD5628 /* RACDisposableViewController.m in Sources */,
 				604073781EEFDC8900815DFC /* myTableViewController.m in Sources */,

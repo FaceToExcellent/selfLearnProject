@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.VCClassNameArray = @[@"socketlearnViewController",@"biaozhixunhuanViewController",@"AVFoudationlearnViewController",@"AVLearn2ViewController",@"CAGradientLearnViewController"];
-    self.VCClasstitleArray = @[@"socket学习",@"标志循环",@"点读机",@"视频",@"文字渐变"];
+    self.VCClassNameArray = @[@"socketlearnViewController",@"biaozhixunhuanViewController",@"AVFoudationlearnViewController",@"AVLearn2ViewController",@"CAGradientLearnViewController",@"testforWifeViewController"];
+    self.VCClasstitleArray = @[@"socket学习",@"标志循环",@"点读机",@"视频",@"文字渐变",@"给老婆测试"];
     // Do any additional setup after loading the view.
     //[self sortQueue];
 }
