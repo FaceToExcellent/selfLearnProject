@@ -8,7 +8,7 @@
 
 #import "testforWifeViewController.h"
 
-@interface testforWifeViewController ()<UIWebViewDelegate>
+@interface testforWifeViewController ()
 @property(nonatomic,strong)UIWebView * webView;
 @end
 
@@ -17,8 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self loadLocalHTMLFileToUIWebView];
+   //[self loadLocalHTMLFileToUIWebView];
     
+    [self load2];
     // Do any additional setup after loading the view.
 }
 - (void)loadLocalHTMLFileToUIWebView{
@@ -35,7 +36,36 @@
     // 5.最后将webView添加到界面
     [self.view addSubview:webView];
     self.webView = webView;
+    
+    
+ 
+    
+    
 
+}
+
+-(void)load2{
+    
+   _webView =  [[UIWebView alloc] initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH , SCREEN_HEIGHT)];
+    
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"testimage" ofType:@"jpg"];
+    
+//    NSString *htmlString = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    NSURL * url = [NSURL fileURLWithPath:path isDirectory:NO];
+    NSString *htmlString = [NSString stringWithFormat:@"<!DOCTYPE html><html><img src=\"%@\" width=\"100%%\" height=\"100%%\"><body></body></html>",[url absoluteString]];
+    
+    NSString *basePath = [[NSBundle mainBundle] bundlePath];
+    
+    NSURL *baseURL = [NSURL fileURLWithPath:basePath];
+    
+    [self.webView loadHTMLString:htmlString baseURL:baseURL];
+    [self.view addSubview:_webView];
+    
+    
+  
+    
+    
 }
 
 
