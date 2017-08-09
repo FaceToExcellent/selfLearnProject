@@ -68,6 +68,8 @@
 		604073CF1EEFE0D400815DFC /* RAClearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073CC1EEFE0D400815DFC /* RAClearnViewController.m */; };
 		604073D01EEFE0D400815DFC /* RACAndMVVMlearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604073CE1EEFE0D400815DFC /* RACAndMVVMlearnViewController.m */; };
 		60412F5E1F15F84500618416 /* MathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60412F5D1F15F84500618416 /* MathViewController.m */; };
+		6048978E1F3AA88800C5119D /* mylabelbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6048978D1F3AA88800C5119D /* mylabelbarView.m */; };
+		604897921F3AAD6A00C5119D /* NSMutableArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 604897911F3AAD6A00C5119D /* NSMutableArray+Sort.m */; };
 		D3D897EA8D77F77D2326912C /* libPods-selfLearnProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E924996B0806E51B01591F /* libPods-selfLearnProject.a */; };
 /* End PBXBuildFile section */
 
@@ -211,6 +213,10 @@
 		604073CE1EEFE0D400815DFC /* RACAndMVVMlearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACAndMVVMlearnViewController.m; sourceTree = "<group>"; };
 		60412F5C1F15F84500618416 /* MathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathViewController.h; sourceTree = "<group>"; };
 		60412F5D1F15F84500618416 /* MathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathViewController.m; sourceTree = "<group>"; };
+		6048978C1F3AA88800C5119D /* mylabelbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mylabelbarView.h; sourceTree = "<group>"; };
+		6048978D1F3AA88800C5119D /* mylabelbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mylabelbarView.m; sourceTree = "<group>"; };
+		604897901F3AAD6A00C5119D /* NSMutableArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Sort.h"; sourceTree = "<group>"; };
+		604897911F3AAD6A00C5119D /* NSMutableArray+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Sort.m"; sourceTree = "<group>"; };
 		7DB64691A841809C2A1379F1 /* Pods-selfLearnProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-selfLearnProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-selfLearnProject/Pods-selfLearnProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -265,6 +271,10 @@
 			children = (
 				601469991F38056900C54588 /* SortViewController.h */,
 				6014699A1F38056900C54588 /* SortViewController.m */,
+				6048978C1F3AA88800C5119D /* mylabelbarView.h */,
+				6048978D1F3AA88800C5119D /* mylabelbarView.m */,
+				604897901F3AAD6A00C5119D /* NSMutableArray+Sort.h */,
+				604897911F3AAD6A00C5119D /* NSMutableArray+Sort.m */,
 			);
 			name = "各种排序算法学习";
 			path = "未命名文件夹";
@@ -902,6 +912,7 @@
 				603E32981F039CBD00D6FD77 /* dogModel.m in Sources */,
 				603E329C1F03AA6B00D6FD77 /* NSObject+KeyValues.m in Sources */,
 				603EF3C91EF119F1001353BD /* refreshwithRACViewController.m in Sources */,
+				6048978E1F3AA88800C5119D /* mylabelbarView.m in Sources */,
 				602F53191EF22FA200B69450 /* RACSequenceViewController.m in Sources */,
 				603C20C91F0C8BB500CFD573 /* BulletManager.m in Sources */,
 				6032DF5B1F049C3F00D399E1 /* UIButton+mystate.m in Sources */,
@@ -935,6 +946,7 @@
 				604073A01EEFDDEA00815DFC /* GCDtimerViewController.m in Sources */,
 				603E32891F03467E00D6FD77 /* testModel.m in Sources */,
 				604073C41EEFE0BD00815DFC /* RACSignalHandleViewController.m in Sources */,
+				604897921F3AAD6A00C5119D /* NSMutableArray+Sort.m in Sources */,
 				604073C91EEFE0C900815DFC /* dog.m in Sources */,
 				60412F5E1F15F84500618416 /* MathViewController.m in Sources */,
 				602F53151EF225C900B69450 /* combineViewController.m in Sources */,
