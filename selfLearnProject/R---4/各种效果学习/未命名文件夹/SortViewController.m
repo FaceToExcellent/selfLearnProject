@@ -7,7 +7,7 @@
 //
 
 #import "SortViewController.h"
-
+#import "mylabelbarView.h"
 @interface SortViewController ()
 @property (nonatomic, strong) UISegmentedControl *segmentControl;
 @property (nonatomic, strong) UISegmentedControl *countSegmentControl;
@@ -68,6 +68,24 @@
 }
 
 - (void)orderSegmentControlChanged:(UISegmentedControl *)segmentControl{
+    
+    
+}
+
+//交换两个label位置
+- (void)exchangePositionWithBarOne:(mylabelbarView *)barOne andBarTwo:(mylabelbarView *)barTwo {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        CGRect frameOne = barOne.frame;
+        CGRect frameTwo = barOne.frame;
+        frameOne.origin.x  = barTwo.frame.origin.x;
+        frameTwo.origin.x = barOne.frame.origin.x;
+        barOne.frame = frameOne;
+        barTwo.frame = frameTwo;
+        
+        
+        
+        
+    });
     
     
 }
