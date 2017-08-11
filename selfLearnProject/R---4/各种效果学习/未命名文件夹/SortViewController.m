@@ -12,6 +12,22 @@
 @property (nonatomic, strong) UISegmentedControl *segmentControl;
 @property (nonatomic, strong) UISegmentedControl *countSegmentControl;
 @property (nonatomic, strong) UISegmentedControl *orderSegmentControl;
+
+@property (nonatomic, strong) NSMutableArray<mylabelbarView *> *barArray;
+@property(nonatomic,strong)NSMutableArray <UIView*>*myarr;
+
+@property (nonatomic, strong) NSTimer *timer;
+@property (nonatomic, strong) dispatch_semaphore_t sema;
+
+@property(nonatomic, assign) NSInteger barCount;
+@property(nonatomic, assign) BOOL repeatState;
+@property(nonatomic, assign) BOOL orderState;
+@property(nonatomic, assign) NSInteger index;
+@property(nonatomic, assign) CGFloat barBottom;
+@property(nonatomic, assign) CGFloat barAreaHeight;
+
+@property (nonatomic, strong) UILabel *timeLabel;
+@property (nonatomic, assign) NSTimeInterval nowTime;
 @end
 
 @implementation SortViewController
@@ -72,23 +88,7 @@
     
 }
 
-//交换两个label位置
-- (void)exchangePositionWithBarOne:(mylabelbarView *)barOne andBarTwo:(mylabelbarView *)barTwo {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        CGRect frameOne = barOne.frame;
-        CGRect frameTwo = barOne.frame;
-        frameOne.origin.x  = barTwo.frame.origin.x;
-        frameTwo.origin.x = barOne.frame.origin.x;
-        barOne.frame = frameOne;
-        barTwo.frame = frameTwo;
-        
-        
-        
-        
-    });
-    
-    
-}
+
 #pragma mark Getter && Setter
 -(UISegmentedControl *)segmentControl
 {
@@ -123,6 +123,77 @@
     }
     
     return _orderSegmentControl;
+}
+/**
+ 设置BarView的高度
+ 
+ @param mutArray 高度数组
+ @param isReset 是否是重置状态
+ */
+
+- (void)setupBarArrayHeight:(NSMutableArray *)mutArray isReset:(BOOL)isReset {
+    
+    CGFloat width = VIEWWIDTH;
+    CGFloat barMargin = 1;
+     CGFloat barWidth = floorf((width - barMargin * (self.barCount + 1)) / self.barCount);
+    CGFloat barOrginX = roundf((width - (barMargin + barWidth)*self.barCount +barMargin)/2.0);
+    
+    [self.barArray enumerateObjectsUsingBlock:^(mylabelbarView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        CGFloat barHeight =[mutArray[idx] floatValue];
+          //重置状态
+        if (isReset) {
+            if (self.orderState) {
+                barHeight = self.barAreaHeight/2 + idx *2;
+                
+            }
+               //大量重复元素
+            if (self.repeatState) {
+                barHeight = self.barAreaHeight/2 + arc4random_uniform(5)*10;
+            }
+        }
+        
+        obj.frame = CGRectMake(barOrginX+ idx * (barMargin + barWidth), self.barBottom - barHeight, barWidth, barHeight);
+        obj.tag = (int)idx +2;
+        
+    }];
+    //近乎有序
+    if (self.orderState && isReset) {
+        for (int i =0; i<100; i++) {
+            int posx =  arc4random()% self.barCount;
+            mylabelbarView * bar  = self.barArray[posx];
+            CGRect frame = bar.frame;
+            CGFloat h = arc4random() % 100;
+            frame.size.height += h;
+            frame.origin.y -= h;
+            bar.frame =frame;
+        }
+    }
+   
+    
+
+}
+
+#pragma mark - 回调
+
+- (void)resetSortArray:(NSMutableArray *)mutArray{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self setupBarArrayHeight:mutArray isReset:NO];
+    });
+    
+}
+
+//交换两个label位置
+- (void)exchangePositionWithBarOne:(mylabelbarView *)barOne andBarTwo:(mylabelbarView *)barTwo {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        CGRect frameOne = barOne.frame;
+        CGRect frameTwo = barOne.frame;
+        frameOne.origin.x  = barTwo.frame.origin.x;
+        frameTwo.origin.x = barOne.frame.origin.x;
+        barOne.frame = frameOne;
+        barTwo.frame = frameTwo;
+    });
+    
+    
 }
 
 
