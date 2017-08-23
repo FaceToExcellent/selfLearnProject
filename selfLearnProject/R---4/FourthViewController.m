@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.VCClassNameArray = @[@"BulletViewController",@"LinksViewController",@"MathViewController",@"LinkViewController",@"ProducerConsumerViewController",@"TaskViewController",@"SortViewController"];
-    self.VCClasstitleArray = @[@"弹幕",@"链式编程学习",@"算法",@"链表",@"生产者消费者",@"仿iOS9任务管理器",@"各种排序算法"];
+    self.VCClassNameArray = @[@"BulletViewController",@"LinksViewController",@"MathViewController",@"LinkViewController",@"ProducerConsumerViewController",@"TaskViewController",@"LearnQuartz2DViewController",@"NavBarLearnViewController"];
+    self.VCClasstitleArray = @[@"弹幕",@"链式编程学习",@"算法",@"链表",@"生产者消费者",@"仿iOS9任务管理器",@"学习Quartz2D",@"各种导航学习"];
    
     
 }

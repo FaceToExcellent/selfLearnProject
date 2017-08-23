@@ -1,15 +1,23 @@
 PODS:
   - iCarousel (1.8.3)
   - ReactiveObjC (3.0.0)
+  - SDCycleScrollView (1.66):
+    - SDWebImage (~> 4.0.0)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
 
 DEPENDENCIES:
   - iCarousel (~> 1.8.2)
   - ReactiveObjC (~> 3.0.0)
+  - SDCycleScrollView
 
 SPEC CHECKSUMS:
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
+  SDCycleScrollView: e3ade90e9b3159bec04330b208fbfd81c3f3b671
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 455e9c77e49e7048e1e525e1e98ebca0d081fd5a
+PODFILE CHECKSUM: f106e15ede374747c587a3de97a6a7e4f34a67c4
 
 COCOAPODS: 1.1.1
