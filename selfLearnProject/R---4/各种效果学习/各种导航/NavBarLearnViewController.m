@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBar.translucent = NO;
+    self.tableView.frame =CGRectMake(0, 0,self.view.frame.size.width, self.view.frame.size.height);
     self.VCClassNameArray = @[@"QQAppController"];
     self.VCClasstitleArray = @[@"qq应用类导航"];
     
