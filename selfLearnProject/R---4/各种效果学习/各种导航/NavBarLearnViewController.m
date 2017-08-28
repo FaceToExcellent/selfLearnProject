@@ -17,8 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.frame =CGRectMake(0, 0,self.view.frame.size.width, self.view.frame.size.height);
-    self.VCClassNameArray = @[@"QQAppController"];
-    self.VCClasstitleArray = @[@"qq应用类导航"];
+    self.VCClassNameArray = @[@"QQAppController",@"zhihuViewController"];
+    self.VCClasstitleArray = @[@"qq应用类导航",@"知乎"];
     
 }
 

@@ -10,6 +10,7 @@
 		600778D61F395D6F00574809 /* testforWifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 600778D51F395D6F00574809 /* testforWifeViewController.m */; };
 		600E40FB1F286E3D00A639CC /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 600E40FA1F286E3D00A639CC /* TaskViewController.m */; };
 		601149061F258DA400C78EDB /* dispatch_onceOBJC.m in Sources */ = {isa = PBXBuildFile; fileRef = 601149051F258DA400C78EDB /* dispatch_onceOBJC.m */; };
+		6011D65B1F53B74100F2DF6B /* zhihuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6011D65A1F53B74100F2DF6B /* zhihuViewController.m */; };
 		60141BBA1F26E36E00128641 /* ProducerConsumerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60141BB91F26E36E00128641 /* ProducerConsumerViewController.m */; };
 		60149DD61F1EF7B600CA8A8A /* LinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60149DD51F1EF7B600CA8A8A /* LinkViewController.m */; };
 		60149DD91F1EF7F000CA8A8A /* myNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 60149DD81F1EF7F000CA8A8A /* myNode.m */; };
@@ -101,6 +102,8 @@
 		600E40FA1F286E3D00A639CC /* TaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskViewController.m; sourceTree = "<group>"; };
 		601149041F258DA400C78EDB /* dispatch_onceOBJC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dispatch_onceOBJC.h; sourceTree = "<group>"; };
 		601149051F258DA400C78EDB /* dispatch_onceOBJC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dispatch_onceOBJC.m; sourceTree = "<group>"; };
+		6011D6591F53B74100F2DF6B /* zhihuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhihuViewController.h; sourceTree = "<group>"; };
+		6011D65A1F53B74100F2DF6B /* zhihuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhihuViewController.m; sourceTree = "<group>"; };
 		60141BB81F26E36E00128641 /* ProducerConsumerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProducerConsumerViewController.h; sourceTree = "<group>"; };
 		60141BB91F26E36E00128641 /* ProducerConsumerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProducerConsumerViewController.m; sourceTree = "<group>"; };
 		60149DD41F1EF7B600CA8A8A /* LinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkViewController.h; sourceTree = "<group>"; };
@@ -710,6 +713,8 @@
 				604E42DB1F4D56710088A39D /* NavBarLearnViewController.m */,
 				604E42E41F4D5F040088A39D /* QQAppController.h */,
 				604E42E51F4D5F040088A39D /* QQAppController.m */,
+				6011D6591F53B74100F2DF6B /* zhihuViewController.h */,
+				6011D65A1F53B74100F2DF6B /* zhihuViewController.m */,
 			);
 			path = "各种导航";
 			sourceTree = "<group>";
@@ -952,6 +957,7 @@
 				604073CA1EEFE0C900815DFC /* LoginViewModel.m in Sources */,
 				604E42E01F4D5E560088A39D /* WRNavigationBar.m in Sources */,
 				604E42E31F4D5E600088A39D /* WRImageHelper.m in Sources */,
+				6011D65B1F53B74100F2DF6B /* zhihuViewController.m in Sources */,
 				601149061F258DA400C78EDB /* dispatch_onceOBJC.m in Sources */,
 				6032DF5E1F049F5900D399E1 /* Bird.m in Sources */,
 				602F531D1EF27BDB00B69450 /* UIButton+mycategory.m in Sources */,
