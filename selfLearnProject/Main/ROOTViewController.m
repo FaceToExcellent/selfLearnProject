@@ -18,7 +18,8 @@
     [super viewDidLoad];
     
     
-    
+    self.navigationController.navigationBar.translucent = NO;
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navBAc"] forBarMetrics:UIBarMetricsDefault];
     
   
     

@@ -14,6 +14,8 @@
 		60141BBA1F26E36E00128641 /* ProducerConsumerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60141BB91F26E36E00128641 /* ProducerConsumerViewController.m */; };
 		60149DD61F1EF7B600CA8A8A /* LinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60149DD51F1EF7B600CA8A8A /* LinkViewController.m */; };
 		60149DD91F1EF7F000CA8A8A /* myNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 60149DD81F1EF7F000CA8A8A /* myNode.m */; };
+		6015243C1F5505F800CD51A8 /* WaterWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6015243B1F5505F800CD51A8 /* WaterWaveViewController.m */; };
+		6015243F1F55064000CD51A8 /* WaterWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6015243E1F55064000CD51A8 /* WaterWaveView.m */; };
 		602F53151EF225C900B69450 /* combineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F53141EF225C900B69450 /* combineViewController.m */; };
 		602F53191EF22FA200B69450 /* RACSequenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F53181EF22FA200B69450 /* RACSequenceViewController.m */; };
 		602F531D1EF27BDB00B69450 /* UIButton+mycategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F531C1EF27BDB00B69450 /* UIButton+mycategory.m */; };
@@ -110,6 +112,10 @@
 		60149DD51F1EF7B600CA8A8A /* LinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkViewController.m; sourceTree = "<group>"; };
 		60149DD71F1EF7F000CA8A8A /* myNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myNode.h; sourceTree = "<group>"; };
 		60149DD81F1EF7F000CA8A8A /* myNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myNode.m; sourceTree = "<group>"; };
+		6015243A1F5505F800CD51A8 /* WaterWaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterWaveViewController.h; sourceTree = "<group>"; };
+		6015243B1F5505F800CD51A8 /* WaterWaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterWaveViewController.m; sourceTree = "<group>"; };
+		6015243D1F55064000CD51A8 /* WaterWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterWaveView.h; sourceTree = "<group>"; };
+		6015243E1F55064000CD51A8 /* WaterWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterWaveView.m; sourceTree = "<group>"; };
 		602F53131EF225C900B69450 /* combineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = combineViewController.h; sourceTree = "<group>"; };
 		602F53141EF225C900B69450 /* combineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = combineViewController.m; sourceTree = "<group>"; };
 		602F53171EF22FA200B69450 /* RACSequenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACSequenceViewController.h; sourceTree = "<group>"; };
@@ -275,6 +281,17 @@
 			path = "链表";
 			sourceTree = "<group>";
 		};
+		601524391F5505D300CD51A8 /* 水波动画 */ = {
+			isa = PBXGroup;
+			children = (
+				6015243A1F5505F800CD51A8 /* WaterWaveViewController.h */,
+				6015243B1F5505F800CD51A8 /* WaterWaveViewController.m */,
+				6015243D1F55064000CD51A8 /* WaterWaveView.h */,
+				6015243E1F55064000CD51A8 /* WaterWaveView.m */,
+			);
+			path = "水波动画";
+			sourceTree = "<group>";
+		};
 		6017837C1F2B146E00DF1A1F /* Quartz2D */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +352,7 @@
 		603C20BF1F0C861B00CFD573 /* 各种效果学习 */ = {
 			isa = PBXGroup;
 			children = (
+				601524391F5505D300CD51A8 /* 水波动画 */,
 				604E42D91F4D55BE0088A39D /* 各种导航 */,
 				6017837C1F2B146E00DF1A1F /* Quartz2D */,
 				600E40F81F286E1A00A639CC /* 仿iOS9任务管理器 */,
@@ -958,6 +976,7 @@
 				604E42E01F4D5E560088A39D /* WRNavigationBar.m in Sources */,
 				604E42E31F4D5E600088A39D /* WRImageHelper.m in Sources */,
 				6011D65B1F53B74100F2DF6B /* zhihuViewController.m in Sources */,
+				6015243C1F5505F800CD51A8 /* WaterWaveViewController.m in Sources */,
 				601149061F258DA400C78EDB /* dispatch_onceOBJC.m in Sources */,
 				6032DF5E1F049F5900D399E1 /* Bird.m in Sources */,
 				602F531D1EF27BDB00B69450 /* UIButton+mycategory.m in Sources */,
@@ -984,6 +1003,7 @@
 				60412F5E1F15F84500618416 /* MathViewController.m in Sources */,
 				602F53151EF225C900B69450 /* combineViewController.m in Sources */,
 				604E42DC1F4D56710088A39D /* NavBarLearnViewController.m in Sources */,
+				6015243F1F55064000CD51A8 /* WaterWaveView.m in Sources */,
 				604073791EEFDC8900815DFC /* ROOTViewController.m in Sources */,
 				604073D01EEFE0D400815DFC /* RACAndMVVMlearnViewController.m in Sources */,
 				60336EDD1F131EF0006F8F4B /* LinksViewController.m in Sources */,
