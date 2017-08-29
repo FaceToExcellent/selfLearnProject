@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QQAppController : UIViewController
+@interface QQAppController : backViewController
 
 @end

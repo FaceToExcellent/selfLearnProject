@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface zhihuViewController : UIViewController
+@interface zhihuViewController : backViewController
 
 @end
