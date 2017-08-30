@@ -11,6 +11,7 @@ DEPENDENCIES:
   - iCarousel (~> 1.8.2)
   - ReactiveObjC (~> 3.0.0)
   - SDCycleScrollView
+  - SDWebImage
 
 SPEC CHECKSUMS:
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
@@ -18,6 +19,6 @@ SPEC CHECKSUMS:
   SDCycleScrollView: e3ade90e9b3159bec04330b208fbfd81c3f3b671
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: f106e15ede374747c587a3de97a6a7e4f34a67c4
+PODFILE CHECKSUM: 9cf3c46347ace2daad2c5389edd718960bf111fc
 
 COCOAPODS: 1.1.1
