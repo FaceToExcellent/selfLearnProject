@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9494390523250106847516AB47E5F9FF'
-               BlueprintName = 'iCarousel'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libiCarousel.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "94C15A049096B1A98CEF923AC5B7F306"
+               BuildableName = "libiCarousel.a"
+               BlueprintName = "iCarousel"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
