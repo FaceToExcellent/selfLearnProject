@@ -16,8 +16,7 @@
 @implementation AVLearn2ViewController
 //本地视频
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewDidLoad {    [super viewDidLoad];
     NSURL * url = [[NSBundle mainBundle]URLForResource:@"凉凉.mp4" withExtension:nil];
     //视频属性 items
     //playerItemWithAsset 通过对系统的相册内容进行访问，创建出一个需要播放的内容
