@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.VCClassNameArray = @[@"runlooponeViewController",@"runlooptwoViewController",@"GCDtimerViewController",@"imageCellTestViewController",@"RuntimetestViewController",@"testViewController",@"usetestViewController"];
-    self.VCClasstitleArray = @[@"RunLoop初级练习",@"基础知识点整理",@"精准GCD",@"RunLoop实际应用于cell渲染",@"Runtime做归档解档",@"RunTime应用",@"基本用法"];
+    self.VCClassNameArray = @[@"runlooponeViewController",@"runlooptwoViewController",@"GCDtimerViewController",@"imageCellTestViewController",@"RuntimetestViewController",@"testViewController",@"usetestViewController",@"categorylearnVC"];
+    self.VCClasstitleArray = @[@"RunLoop初级练习",@"基础知识点整理",@"精准GCD",@"RunLoop实际应用于cell渲染",@"Runtime做归档解档",@"RunTime应用",@"基本用法",@"categorylearnVC"];
     // Do any additional setup after loading the view.
 }
 

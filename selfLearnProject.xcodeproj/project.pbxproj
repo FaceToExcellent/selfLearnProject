@@ -16,6 +16,9 @@
 		60149DD91F1EF7F000CA8A8A /* myNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 60149DD81F1EF7F000CA8A8A /* myNode.m */; };
 		6015243C1F5505F800CD51A8 /* WaterWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6015243B1F5505F800CD51A8 /* WaterWaveViewController.m */; };
 		6015243F1F55064000CD51A8 /* WaterWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6015243E1F55064000CD51A8 /* WaterWaveView.m */; };
+		602B0B44244EC3990073719D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 602B0B43244EC3990073719D /* Person.m */; };
+		602B0B47244EC42C0073719D /* Person+morefun.m in Sources */ = {isa = PBXBuildFile; fileRef = 602B0B46244EC42C0073719D /* Person+morefun.m */; };
+		602B0B4A244EC4F90073719D /* categorylearnVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 602B0B49244EC4F90073719D /* categorylearnVC.m */; };
 		602F53151EF225C900B69450 /* combineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F53141EF225C900B69450 /* combineViewController.m */; };
 		602F53191EF22FA200B69450 /* RACSequenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F53181EF22FA200B69450 /* RACSequenceViewController.m */; };
 		602F531D1EF27BDB00B69450 /* UIButton+mycategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F531C1EF27BDB00B69450 /* UIButton+mycategory.m */; };
@@ -116,6 +119,12 @@
 		6015243B1F5505F800CD51A8 /* WaterWaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterWaveViewController.m; sourceTree = "<group>"; };
 		6015243D1F55064000CD51A8 /* WaterWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterWaveView.h; sourceTree = "<group>"; };
 		6015243E1F55064000CD51A8 /* WaterWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterWaveView.m; sourceTree = "<group>"; };
+		602B0B42244EC3990073719D /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		602B0B43244EC3990073719D /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		602B0B45244EC42C0073719D /* Person+morefun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+morefun.h"; sourceTree = "<group>"; };
+		602B0B46244EC42C0073719D /* Person+morefun.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+morefun.m"; sourceTree = "<group>"; };
+		602B0B48244EC4F90073719D /* categorylearnVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = categorylearnVC.h; sourceTree = "<group>"; };
+		602B0B49244EC4F90073719D /* categorylearnVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = categorylearnVC.m; sourceTree = "<group>"; };
 		602F53131EF225C900B69450 /* combineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = combineViewController.h; sourceTree = "<group>"; };
 		602F53141EF225C900B69450 /* combineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = combineViewController.m; sourceTree = "<group>"; };
 		602F53171EF22FA200B69450 /* RACSequenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACSequenceViewController.h; sourceTree = "<group>"; };
@@ -300,6 +309,19 @@
 			);
 			name = Quartz2D;
 			path = "未命名文件夹";
+			sourceTree = "<group>";
+		};
+		602B0B41244EC3640073719D /* Category学习 */ = {
+			isa = PBXGroup;
+			children = (
+				602B0B42244EC3990073719D /* Person.h */,
+				602B0B43244EC3990073719D /* Person.m */,
+				602B0B45244EC42C0073719D /* Person+morefun.h */,
+				602B0B46244EC42C0073719D /* Person+morefun.m */,
+				602B0B48244EC4F90073719D /* categorylearnVC.h */,
+				602B0B49244EC4F90073719D /* categorylearnVC.m */,
+			);
+			path = "Category学习";
 			sourceTree = "<group>";
 		};
 		602F53121EF225AE00B69450 /* 合并操作 */ = {
@@ -547,6 +569,7 @@
 		6040737F1EEFDD5600815DFC /* R---1 */ = {
 			isa = PBXGroup;
 			children = (
+				602B0B41244EC3640073719D /* Category学习 */,
 				604073901EEFDDCA00815DFC /* RunLoop学习 */,
 				6040738F1EEFDDB400815DFC /* Runtime学习 */,
 				604073831EEFDD8100815DFC /* FirstViewController.h */,
@@ -852,6 +875,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -946,9 +970,11 @@
 				604073CA1EEFE0C900815DFC /* LoginViewModel.m in Sources */,
 				604E42E01F4D5E560088A39D /* WRNavigationBar.m in Sources */,
 				604E42E31F4D5E600088A39D /* WRImageHelper.m in Sources */,
+				602B0B47244EC42C0073719D /* Person+morefun.m in Sources */,
 				6011D65B1F53B74100F2DF6B /* zhihuViewController.m in Sources */,
 				6015243C1F5505F800CD51A8 /* WaterWaveViewController.m in Sources */,
 				601149061F258DA400C78EDB /* dispatch_onceOBJC.m in Sources */,
+				602B0B44244EC3990073719D /* Person.m in Sources */,
 				6032DF5E1F049F5900D399E1 /* Bird.m in Sources */,
 				602F531D1EF27BDB00B69450 /* UIButton+mycategory.m in Sources */,
 				60141BBA1F26E36E00128641 /* ProducerConsumerViewController.m in Sources */,
@@ -983,6 +1009,7 @@
 				603064801F1868D400CD5628 /* RACDisposableViewController.m in Sources */,
 				604073781EEFDC8900815DFC /* myTableViewController.m in Sources */,
 				6040737A1EEFDC8900815DFC /* AppDelegate.m in Sources */,
+				602B0B4A244EC4F90073719D /* categorylearnVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
