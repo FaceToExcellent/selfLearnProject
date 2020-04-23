@@ -7,7 +7,7 @@
 //
 #import "WaterWaveView.h"
 #import "WaterWaveViewController.h"
-
+#import "Masonry.h"
 @interface WaterWaveViewController ()
 
 @end
@@ -19,9 +19,16 @@
   
    
     
-    UIView * backview  = [[UIView alloc]initWithFrame:CGRectMake(70, 150, 200, 200)];
+    UIView * backview  = [[UIView alloc]init];
     backview.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:backview];
+    [backview  mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(10) ;
+        
+    }];
+    
+    
+    
     
     WaterWaveView * view  = [[WaterWaveView alloc]initWithFrame:CGRectMake(0, 0, 200, 200)];
     [backview addSubview:view];

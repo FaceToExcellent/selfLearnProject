@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CAB00BD9A59DF3A04DADCC6 /* Pods_selfLearnProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22083F6E53CF4814D332B979 /* Pods_selfLearnProject.framework */; };
 		600778D61F395D6F00574809 /* testforWifeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 600778D51F395D6F00574809 /* testforWifeViewController.m */; };
 		600E40FB1F286E3D00A639CC /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 600E40FA1F286E3D00A639CC /* TaskViewController.m */; };
 		601149061F258DA400C78EDB /* dispatch_onceOBJC.m in Sources */ = {isa = PBXBuildFile; fileRef = 601149051F258DA400C78EDB /* dispatch_onceOBJC.m */; };
@@ -23,6 +24,7 @@
 		602F53191EF22FA200B69450 /* RACSequenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F53181EF22FA200B69450 /* RACSequenceViewController.m */; };
 		602F531D1EF27BDB00B69450 /* UIButton+mycategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 602F531C1EF27BDB00B69450 /* UIButton+mycategory.m */; };
 		603064801F1868D400CD5628 /* RACDisposableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6030647F1F1868D400CD5628 /* RACDisposableViewController.m */; };
+		603268E524518FFC00321156 /* snTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 603268E424518FFC00321156 /* snTableViewCell.m */; };
 		6032DF581F04994A00D399E1 /* UIButton+ClickBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032DF571F04994A00D399E1 /* UIButton+ClickBlock.m */; };
 		6032DF5B1F049C3F00D399E1 /* UIButton+mystate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032DF5A1F049C3F00D399E1 /* UIButton+mystate.m */; };
 		6032DF5E1F049F5900D399E1 /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = 6032DF5D1F049F5900D399E1 /* Bird.m */; };
@@ -78,7 +80,6 @@
 		604E42E01F4D5E560088A39D /* WRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 604E42DF1F4D5E560088A39D /* WRNavigationBar.m */; };
 		604E42E31F4D5E600088A39D /* WRImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 604E42E21F4D5E600088A39D /* WRImageHelper.m */; };
 		604E42E61F4D5F040088A39D /* QQAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 604E42E51F4D5F040088A39D /* QQAppController.m */; };
-		D3D897EA8D77F77D2326912C /* libPods-selfLearnProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35E924996B0806E51B01591F /* libPods-selfLearnProject.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,7 +100,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		35E924996B0806E51B01591F /* libPods-selfLearnProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-selfLearnProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22083F6E53CF4814D332B979 /* Pods_selfLearnProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_selfLearnProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A3B7CAE8E1973E99560CFD /* Pods-selfLearnProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-selfLearnProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-selfLearnProject/Pods-selfLearnProject.release.xcconfig"; sourceTree = "<group>"; };
 		600778D41F395D6F00574809 /* testforWifeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testforWifeViewController.h; sourceTree = "<group>"; };
 		600778D51F395D6F00574809 /* testforWifeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testforWifeViewController.m; sourceTree = "<group>"; };
@@ -133,6 +134,8 @@
 		602F531C1EF27BDB00B69450 /* UIButton+mycategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+mycategory.m"; sourceTree = "<group>"; };
 		6030647E1F1868D400CD5628 /* RACDisposableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACDisposableViewController.h; sourceTree = "<group>"; };
 		6030647F1F1868D400CD5628 /* RACDisposableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACDisposableViewController.m; sourceTree = "<group>"; };
+		603268E324518FFC00321156 /* snTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = snTableViewCell.h; sourceTree = "<group>"; };
+		603268E424518FFC00321156 /* snTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = snTableViewCell.m; sourceTree = "<group>"; };
 		6032DF561F04994A00D399E1 /* UIButton+ClickBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ClickBlock.h"; sourceTree = "<group>"; };
 		6032DF571F04994A00D399E1 /* UIButton+ClickBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ClickBlock.m"; sourceTree = "<group>"; };
 		6032DF591F049C3F00D399E1 /* UIButton+mystate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+mystate.h"; sourceTree = "<group>"; };
@@ -249,7 +252,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3D897EA8D77F77D2326912C /* libPods-selfLearnProject.a in Frameworks */,
+				0CAB00BD9A59DF3A04DADCC6 /* Pods_selfLearnProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +300,8 @@
 				6015243B1F5505F800CD51A8 /* WaterWaveViewController.m */,
 				6015243D1F55064000CD51A8 /* WaterWaveView.h */,
 				6015243E1F55064000CD51A8 /* WaterWaveView.m */,
+				603268E324518FFC00321156 /* snTableViewCell.h */,
+				603268E424518FFC00321156 /* snTableViewCell.m */,
 			);
 			path = "水波动画";
 			sourceTree = "<group>";
@@ -774,7 +779,7 @@
 		719F122317983DC4BFDBDF09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				35E924996B0806E51B01591F /* libPods-selfLearnProject.a */,
+				22083F6E53CF4814D332B979 /* Pods_selfLearnProject.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -799,6 +804,7 @@
 				604073311EEFDBAA00815DFC /* Sources */,
 				604073321EEFDBAA00815DFC /* Frameworks */,
 				604073331EEFDBAA00815DFC /* Resources */,
+				D70A672BED86475B2C4123B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -940,6 +946,32 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D70A672BED86475B2C4123B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-selfLearnProject/Pods-selfLearnProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/iCarousel/iCarousel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iCarousel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-selfLearnProject/Pods-selfLearnProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -963,6 +995,7 @@
 				600E40FB1F286E3D00A639CC /* TaskViewController.m in Sources */,
 				603E32901F038F3400D6FD77 /* usetestViewController.m in Sources */,
 				6040739F1EEFDDE900815DFC /* imageCellTestViewController.m in Sources */,
+				603268E524518FFC00321156 /* snTableViewCell.m in Sources */,
 				604073B51EEFDE5B00815DFC /* CAGradientLearnViewController.m in Sources */,
 				604E42D81F4D20D60088A39D /* LearnQuartz2DViewController.m in Sources */,
 				6040738B1EEFDD9000815DFC /* ThirdViewController.m in Sources */,

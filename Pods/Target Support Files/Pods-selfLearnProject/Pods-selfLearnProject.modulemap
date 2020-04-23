@@ -1,0 +1,6 @@
+framework module Pods_selfLearnProject {
+  umbrella header "Pods-selfLearnProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
